@@ -1,0 +1,288 @@
+{
+  "tool": {
+    "id": "criterios-de-duke",
+    "title": "Critérios de Duke-ISCVID 2023",
+    "short": "Diagnóstico de endocardite infecciosa",
+    "desc": "Aplique os critérios de Duke-ISCVID 2023 (atualização dos critérios de Duke modificados) e classifique a endocardite infecciosa em definida, possível ou rejeitada.",
+    "lead": "Classifica a suspeita de endocardite infecciosa em definida, possível ou rejeitada, combinando critérios patológicos, maiores e menores.",
+    "spec": [
+      "infectologia",
+      "cardiologia",
+      "clinica-medica",
+      "cirurgia-cardiovascular"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "pato",
+        "<strong>Critério patológico:</strong> microrganismo em vegetação, tecido cardíaco, prótese ou êmbolo (cultura, histologia ou PCR), ou endocardite ativa na histologia",
+        "chk",
+        []
+      ],
+      [
+        "maior_micro",
+        "<strong>Maior microbiológico:</strong> agente típico em ≥ 2 hemoculturas separadas, agente ocasional em ≥ 3, PCR positiva no sangue para <em>Coxiella</em>, <em>Bartonella</em> ou <em>T. whipplei</em>, ou sorologia específica (IgG anti-fase I de <em>C. burnetii</em> &gt; 1:800; IgG para <em>Bartonella</em> ≥ 1:800)",
+        "chk",
+        []
+      ],
+      [
+        "maior_img",
+        "<strong>Maior de imagem:</strong> vegetação, perfuração, aneurisma, abscesso, pseudoaneurisma ou fístula ao eco/TC cardíaca; regurgitação valvar nova significativa; deiscência nova de prótese; ou PET/CT com FDG alterado em valva ou eletrodo",
+        "chk",
+        []
+      ],
+      [
+        "maior_cir",
+        "<strong>Maior cirúrgico:</strong> endocardite documentada por inspeção direta na cirurgia cardíaca",
+        "chk",
+        []
+      ],
+      [
+        "men_pred",
+        "<strong>Menor:</strong> predisposição (endocardite prévia, prótese valvar, reparo valvar, cardiopatia congênita, regurgitação ou estenose valvar, dispositivo intracardíaco, cardiomiopatia hipertrófica, uso de drogas injetáveis)",
+        "chk",
+        []
+      ],
+      [
+        "men_febre",
+        "<strong>Menor:</strong> febre &gt; 38,0 °C",
+        "chk",
+        []
+      ],
+      [
+        "men_vasc",
+        "<strong>Menor:</strong> fenômenos vasculares (embolia arterial, infarto séptico pulmonar, abscesso cerebral ou esplênico, aneurisma micótico, hemorragia intracraniana, hemorragia conjuntival, lesões de Janeway, púrpura purulenta)",
+        "chk",
+        []
+      ],
+      [
+        "men_imuno",
+        "<strong>Menor:</strong> fenômenos imunológicos (fator reumatoide positivo, nódulos de Osler, manchas de Roth, glomerulonefrite por imunocomplexos)",
+        "chk",
+        []
+      ],
+      [
+        "men_micro",
+        "<strong>Menor:</strong> evidência microbiológica que não preenche o critério maior",
+        "chk",
+        []
+      ],
+      [
+        "men_img",
+        "<strong>Menor:</strong> PET/CT com FDG alterado até 3 meses após implante de prótese, enxerto ou dispositivo",
+        "chk",
+        []
+      ],
+      [
+        "men_exame",
+        "<strong>Menor:</strong> sopro de regurgitação novo ao exame físico, se o ecocardiograma não estiver disponível",
+        "chk",
+        []
+      ],
+      [
+        "rej_alt",
+        "<strong>Rejeição:</strong> diagnóstico alternativo firme que explica o quadro",
+        "chk",
+        []
+      ],
+      [
+        "rej_res",
+        "<strong>Rejeição:</strong> sem recorrência após antibioticoterapia por menos de 4 dias",
+        "chk",
+        []
+      ],
+      [
+        "rej_pato",
+        "<strong>Rejeição:</strong> sem evidência patológica na cirurgia ou necrópsia, com antibioticoterapia por menos de 4 dias",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<ul><li><strong>Definida:</strong> critério patológico, <em>ou</em> 2 maiores, <em>ou</em> 1 maior + 3 menores, <em>ou</em> 5 menores.</li><li><strong>Possível:</strong> 1 maior + 1 menor, <em>ou</em> 3 menores.</li><li><strong>Rejeitada:</strong> diagnóstico alternativo firme, resolução sem recorrência com menos de 4 dias de antibiótico, ausência de evidência patológica na cirurgia/necrópsia com menos de 4 dias de antibiótico, <em>ou</em> não preenche os critérios de possível.</li></ul>",
+    "table": [
+      [
+        "Classificação",
+        "Combinação de critérios"
+      ],
+      [
+        "Definida",
+        "Patológico; 2 maiores; 1 maior + 3 menores; 5 menores"
+      ],
+      [
+        "Possível",
+        "1 maior + 1 menor; 3 menores"
+      ],
+      [
+        "Rejeitada",
+        "Critério de rejeição ou não atinge \"possível\""
+      ]
+    ],
+    "table_note": "Principais mudanças de 2023 em relação a Li 2000: PET/CT e TC cardíaca como critério maior de imagem, inspeção cirúrgica como critério maior, novos agentes típicos (inclusive <em>Enterococcus faecalis</em> em qualquer contexto) e dispositivos intracardíacos como predisposição.",
+    "tips": [
+      "Colha ao menos 3 pares de hemoculturas, de punções separadas, antes do antibiótico: é o que define o critério maior microbiológico.",
+      "Ecocardiograma transtorácico negativo não exclui endocardite com suspeita moderada ou alta: faça o transesofágico, especialmente em prótese valvar ou dispositivo.",
+      "Os critérios foram feitos para classificação em pesquisa; \"possível\" com alta suspeita clínica deve ser tratado e reinvestigado.",
+      "Em hemoculturas negativas, pense em antibiótico prévio e em agentes fastidiosos (<em>Coxiella</em>, <em>Bartonella</em>, <em>Tropheryma</em>, fungos): peça sorologias e PCR."
+    ],
+    "sources": [
+      [
+        "Fowler VG et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria. Clin Infect Dis, 2023.",
+        "https://doi.org/10.1093/cid/ciad271"
+      ],
+      [
+        "Li JS et al. Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis. Clin Infect Dis, 2000.",
+        "https://doi.org/10.1086/313753"
+      ]
+    ],
+    "cases": [
+      [
+        "Hemoculturas típicas + vegetação ao eco: definida",
+        {
+          "maior_micro": true,
+          "maior_img": true
+        },
+        {
+          "raw": {
+            "maiores": 2,
+            "menores": 0,
+            "cls": "definida"
+          },
+          "level": "high",
+          "main": "Definida"
+        }
+      ],
+      [
+        "1 maior + 3 menores: definida",
+        {
+          "maior_micro": true,
+          "men_pred": true,
+          "men_febre": true,
+          "men_vasc": true
+        },
+        {
+          "raw": {
+            "cls": "definida"
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "5 menores: definida",
+        {
+          "men_pred": true,
+          "men_febre": true,
+          "men_vasc": true,
+          "men_imuno": true,
+          "men_micro": true
+        },
+        {
+          "raw": {
+            "menores": 5,
+            "cls": "definida"
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Critério patológico isolado: definida",
+        {
+          "pato": true
+        },
+        {
+          "raw": {
+            "cls": "definida"
+          },
+          "verdict": "patológico"
+        }
+      ],
+      [
+        "1 maior + 2 menores: possível",
+        {
+          "maior_img": true,
+          "men_pred": true,
+          "men_febre": true
+        },
+        {
+          "raw": {
+            "cls": "possível"
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "3 menores: possível",
+        {
+          "men_pred": true,
+          "men_febre": true,
+          "men_imuno": true
+        },
+        {
+          "raw": {
+            "cls": "possível"
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "3 menores com diagnóstico alternativo firme: rejeitada",
+        {
+          "men_pred": true,
+          "men_febre": true,
+          "men_imuno": true,
+          "rej_alt": true
+        },
+        {
+          "raw": {
+            "cls": "rejeitada"
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "2 menores: rejeitada",
+        {
+          "men_pred": true,
+          "men_febre": true
+        },
+        {
+          "raw": {
+            "cls": "rejeitada"
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 8,
+      "passed": 8,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}

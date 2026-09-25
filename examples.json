@@ -1,0 +1,166 @@
+[
+  {
+    "label": "Hemoculturas típicas + vegetação ao eco: definida",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true
+    },
+    "expected": {
+      "raw": {
+        "maiores": 2,
+        "menores": 0,
+        "cls": "definida"
+      },
+      "level": "high",
+      "main": "Definida"
+    },
+    "originalInput": {
+      "maior_micro": true,
+      "maior_img": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "1 maior + 3 menores: definida",
+    "input": {
+      "maior_micro": true,
+      "men_pred": true,
+      "men_febre": true,
+      "men_vasc": true
+    },
+    "expected": {
+      "raw": {
+        "cls": "definida"
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "maior_micro": true,
+      "men_pred": true,
+      "men_febre": true,
+      "men_vasc": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "5 menores: definida",
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_vasc": true,
+      "men_imuno": true,
+      "men_micro": true
+    },
+    "expected": {
+      "raw": {
+        "menores": 5,
+        "cls": "definida"
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_vasc": true,
+      "men_imuno": true,
+      "men_micro": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Critério patológico isolado: definida",
+    "input": {
+      "pato": true
+    },
+    "expected": {
+      "raw": {
+        "cls": "definida"
+      },
+      "verdict": "patológico"
+    },
+    "originalInput": {
+      "pato": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "1 maior + 2 menores: possível",
+    "input": {
+      "maior_img": true,
+      "men_pred": true,
+      "men_febre": true
+    },
+    "expected": {
+      "raw": {
+        "cls": "possível"
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "maior_img": true,
+      "men_pred": true,
+      "men_febre": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "3 menores: possível",
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_imuno": true
+    },
+    "expected": {
+      "raw": {
+        "cls": "possível"
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_imuno": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "3 menores com diagnóstico alternativo firme: rejeitada",
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_imuno": true,
+      "rej_alt": true
+    },
+    "expected": {
+      "raw": {
+        "cls": "rejeitada"
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_imuno": true,
+      "rej_alt": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "2 menores: rejeitada",
+    "input": {
+      "men_pred": true,
+      "men_febre": true
+    },
+    "expected": {
+      "raw": {
+        "cls": "rejeitada"
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "men_pred": true,
+      "men_febre": true
+    },
+    "expandedZeroOptions": []
+  }
+]
