@@ -5,125 +5,100 @@
     "short": "Diagnóstico de endocardite infecciosa",
     "desc": "Aplique os critérios de Duke-ISCVID 2023 (atualização dos critérios de Duke modificados) e classifique a endocardite infecciosa em definida, possível ou rejeitada.",
     "lead": "Classifica a suspeita de endocardite infecciosa em definida, possível ou rejeitada, combinando critérios patológicos, maiores e menores.",
+    "kind": "Calculadora",
     "spec": [
       "infectologia",
       "cardiologia",
       "clinica-medica",
       "cirurgia-cardiovascular"
     ],
-    "tier": 1,
     "fields": [
       [
         "pato",
         "<strong>Critério patológico:</strong> microrganismo em vegetação, tecido cardíaco, prótese ou êmbolo (cultura, histologia ou PCR), ou endocardite ativa na histologia",
         "chk",
-        []
+        {}
       ],
       [
         "maior_micro",
         "<strong>Maior microbiológico:</strong> agente típico em ≥ 2 hemoculturas separadas, agente ocasional em ≥ 3, PCR positiva no sangue para <em>Coxiella</em>, <em>Bartonella</em> ou <em>T. whipplei</em>, ou sorologia específica (IgG anti-fase I de <em>C. burnetii</em> &gt; 1:800; IgG para <em>Bartonella</em> ≥ 1:800)",
         "chk",
-        []
+        {}
       ],
       [
         "maior_img",
         "<strong>Maior de imagem:</strong> vegetação, perfuração, aneurisma, abscesso, pseudoaneurisma ou fístula ao eco/TC cardíaca; regurgitação valvar nova significativa; deiscência nova de prótese; ou PET/CT com FDG alterado em valva ou eletrodo",
         "chk",
-        []
+        {}
       ],
       [
         "maior_cir",
-        "<strong>Maior cirúrgico:</strong> endocardite documentada por inspeção direta na cirurgia cardíaca",
+        "<strong>Maior cirúrgico:</strong> endocardite documentada por inspeção direta na cirurgia cardíaca, apenas na ausência de critério maior de imagem e de confirmação histológica ou microbiológica posterior",
         "chk",
-        []
+        {}
       ],
       [
         "men_pred",
         "<strong>Menor:</strong> predisposição (endocardite prévia, prótese valvar, reparo valvar, cardiopatia congênita, regurgitação ou estenose valvar, dispositivo intracardíaco, cardiomiopatia hipertrófica, uso de drogas injetáveis)",
         "chk",
-        []
+        {}
       ],
       [
         "men_febre",
         "<strong>Menor:</strong> febre &gt; 38,0 °C",
         "chk",
-        []
+        {}
       ],
       [
         "men_vasc",
         "<strong>Menor:</strong> fenômenos vasculares (embolia arterial, infarto séptico pulmonar, abscesso cerebral ou esplênico, aneurisma micótico, hemorragia intracraniana, hemorragia conjuntival, lesões de Janeway, púrpura purulenta)",
         "chk",
-        []
+        {}
       ],
       [
         "men_imuno",
         "<strong>Menor:</strong> fenômenos imunológicos (fator reumatoide positivo, nódulos de Osler, manchas de Roth, glomerulonefrite por imunocomplexos)",
         "chk",
-        []
+        {}
       ],
       [
         "men_micro",
         "<strong>Menor:</strong> evidência microbiológica que não preenche o critério maior",
         "chk",
-        []
+        {}
       ],
       [
         "men_img",
         "<strong>Menor:</strong> PET/CT com FDG alterado até 3 meses após implante de prótese, enxerto ou dispositivo",
         "chk",
-        []
+        {}
       ],
       [
         "men_exame",
         "<strong>Menor:</strong> sopro de regurgitação novo ao exame físico, se o ecocardiograma não estiver disponível",
         "chk",
-        []
+        {}
       ],
       [
         "rej_alt",
         "<strong>Rejeição:</strong> diagnóstico alternativo firme que explica o quadro",
         "chk",
-        []
+        {}
       ],
       [
         "rej_res",
         "<strong>Rejeição:</strong> sem recorrência após antibioticoterapia por menos de 4 dias",
         "chk",
-        []
+        {}
       ],
       [
         "rej_pato",
         "<strong>Rejeição:</strong> sem evidência patológica na cirurgia ou necrópsia, com antibioticoterapia por menos de 4 dias",
         "chk",
-        []
+        {}
       ]
     ],
-    "formula": "<ul><li><strong>Definida:</strong> critério patológico, <em>ou</em> 2 maiores, <em>ou</em> 1 maior + 3 menores, <em>ou</em> 5 menores.</li><li><strong>Possível:</strong> 1 maior + 1 menor, <em>ou</em> 3 menores.</li><li><strong>Rejeitada:</strong> diagnóstico alternativo firme, resolução sem recorrência com menos de 4 dias de antibiótico, ausência de evidência patológica na cirurgia/necrópsia com menos de 4 dias de antibiótico, <em>ou</em> não preenche os critérios de possível.</li></ul>",
-    "table": [
-      [
-        "Classificação",
-        "Combinação de critérios"
-      ],
-      [
-        "Definida",
-        "Patológico; 2 maiores; 1 maior + 3 menores; 5 menores"
-      ],
-      [
-        "Possível",
-        "1 maior + 1 menor; 3 menores"
-      ],
-      [
-        "Rejeitada",
-        "Critério de rejeição ou não atinge \"possível\""
-      ]
-    ],
-    "table_note": "Principais mudanças de 2023 em relação a Li 2000: PET/CT e TC cardíaca como critério maior de imagem, inspeção cirúrgica como critério maior, novos agentes típicos (inclusive <em>Enterococcus faecalis</em> em qualquer contexto) e dispositivos intracardíacos como predisposição.",
-    "tips": [
-      "Colha ao menos 3 pares de hemoculturas, de punções separadas, antes do antibiótico: é o que define o critério maior microbiológico.",
-      "Ecocardiograma transtorácico negativo não exclui endocardite com suspeita moderada ou alta: faça o transesofágico, especialmente em prótese valvar ou dispositivo.",
-      "Os critérios foram feitos para classificação em pesquisa; \"possível\" com alta suspeita clínica deve ser tratado e reinvestigado.",
-      "Em hemoculturas negativas, pense em antibiótico prévio e em agentes fastidiosos (<em>Coxiella</em>, <em>Bartonella</em>, <em>Tropheryma</em>, fungos): peça sorologias e PCR."
-    ],
+    "formula": "<ul><li><strong>Definida:</strong> critério patológico, <em>ou</em> 2 maiores, <em>ou</em> 1 maior + 3 menores, <em>ou</em> 5 menores.</li><li><strong>Possível:</strong> 1 maior + 1 menor, <em>ou</em> 3 menores.</li><li><strong>Rejeitada:</strong> diagnóstico alternativo firme, resolução sem recorrência com menos de 4 dias de antibiótico, ausência de evidência patológica na cirurgia/necrópsia com menos de 4 dias de antibiótico, <em>ou</em> não preenche os critérios de possível.</li></ul><p><strong>Contagem do maior cirúrgico:</strong> só acrescenta um critério maior quando está selecionado e não há maior de imagem nem critério patológico selecionado. A confirmação posterior prevista na Tabela 2 deve ser verificada; o maior microbiológico do sangue não é automaticamente confirmação posterior em tecido.</p>",
     "sources": [
       [
         "Fowler VG et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria. Clin Infect Dis, 2023.",
@@ -252,9 +227,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -263,17 +235,1151 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T22:34:36.821Z",
+      "total": 1028,
+      "passed": 1028,
+      "sourceRowCount": 1028,
+      "uniqueApiInputCount": 1028,
+      "sourceContextCount": 1028,
+      "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+      "originalSourceRowCount": 1028,
+      "excludedSourceObservationCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "37deaaa8d61d02bcd12af194e5ee4c0cc209faab6420c3b8623b5d70983f5cce",
+        "total": 1028,
+        "bankRowCount": 1028,
+        "uniqueApiInputCount": 1028,
+        "sourceContextCount": 1028,
+        "fullStoredSourceRows": 1028,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          },
+          {
+            "file": "reports/review-20261003/duke-surgical-independent-expectations-final36.json",
+            "sha256": "73716852bd3b1c24a172917e95da7cbc5aa4594c0244954b7ccaafd41792d24b"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+          "sha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b"
+        },
+        "packagingRequirement": "Complete1028 current cases plus exact historical256 exclusion records and original observations downloadable. No historical expectation/observation is rewritten or retrospectively approved.",
+        "historicalExcludedSourceObservationCount": 256
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 1028,
+        "uniqueApiInputs": 1028,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "primary": {
+            "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+            "doi": "10.1093/cid/ciad271",
+            "personallyRead": "Visual printedp3 Table1/printedp4 Table2, direct official PDF surgical discussion printedp6; no fullarticle/clinical validation claim."
+          },
+          "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+          "originalEvidence": [
+            {
+              "primaryReview": {
+                "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+                "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+              },
+              "independentPrimaryReview": {
+                "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+                "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+              },
+              "targetedReading": {
+                "id": "criterios-de-duke",
+                "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+                "edition": "Fowler2023 DukeISCVID DOI10.1093/cid/ciad271, Tables1/2 printed3/4",
+                "personallyRead": [
+                  "Tables1/2 and Table1footnotes printed3/4 personally visually read; official PDF also reopened and relevant definitions read"
+                ],
+                "files": [
+                  "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                  "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                  "six-primary-documents-final32/duke-iscvid-2023-p4.png"
+                ],
+                "access": "Official ISCVID PDF opened directly in own web call. Other later footnotes/full paper not fully read.",
+                "supported": "Definite/possible/rejected Table1 logical combinations of already valid affirmed criteria, isolated pathological/rejection states; major/minor counts. Surgical+major-imaging tuples excluded, no contradictory pathological/rejection claims.",
+                "excluded": [
+                  "Surgical major requires neither major imaging nor subsequent histologic/microbiologic confirmation; local shortlabel lacks qualifiers",
+                  "Generic predisposition label lacks more-than-mild valve disease/obstructiveHCM",
+                  "Pathological shortlabel omits single skin-bacterium PCR valve/wire exception without support",
+                  "Clinical acquisition/diagnostic performance, conflicting flag precedence and implant timing adjudication"
+                ],
+                "sourceArtifacts": [
+                  {
+                    "file": "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                    "bytes": 424403,
+                    "sha256": "23f49274ef781fd0a9f170288a6eea34375d37d06434e99e38515f5649fd8c33"
+                  },
+                  {
+                    "file": "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                    "bytes": 431818,
+                    "sha256": "d49360416b14de5e44ff9d1ccb9a8a1b0d9922c97100b1f0081b0e8c08895c7e"
+                  },
+                  {
+                    "file": "six-primary-documents-final32/duke-iscvid-2023-p4.png",
+                    "bytes": 352058,
+                    "sha256": "509c30e65159dc3125ca1faa01bd6480f821a1ec4a3e1178274df2461bc93a49"
+                  }
+                ]
+              },
+              "declaredOriginalMethodVersion": "Duke ISCVID 2023:combinações decritérios maior/menor/patológico, rejeição; sem substituição por Duke 2000",
+              "sourceEditionsUnchanged": true,
+              "scope": "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval."
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+      "evidenceSha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b",
+      "independentPeer": {
+        "status": "passed-scoped-selected-source-predicate",
+        "evidence": {
+          "file": "reports/review-20261003/duke-own-code-independent-review-verify-final36.json",
+          "sha256": "a2a0f12094ea0a587d6e9c9a27f79a97ccdd57359cecf56670add38bf9e89d3c"
+        },
+        "semanticEvidence": [
+          {
+            "file": "reports/review-20261003/duke-global-independent-review-verify-final36-r4.json",
+            "sha256": "7b8e182585b8b8ec57656d5223b2b8ee579f9b63238361f2ce845c9d1531d7d2"
+          },
+          {
+            "file": "reports/review-20261003/duke-surgical-authorship-independent-review-western-final36-r2.json",
+            "sha256": "fb5375c811c439cf2ee41bacac68c0e9ed5832754cc6011b1d6a8580e257a3ed"
+          }
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+          "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+          "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+          "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+        }
+      ],
+      "qualifications": [
+        "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+        "772 original passed cases are preserved byte-value exact. Former256 source-ineligible records and2628 before-repair selected discrepancies remain historical, without retrospective approval. Sixteen extra own eligibility witnesses and512 independent peer vectors are technical witnesses outside these coverage counters.",
+        "Selected integer/Boolean/classification-code comparison is strict; no fixture or numeric tolerance was changed. Only the existing pathological flag is used as sufficient later confirmation, and this interface does not represent full chronology.",
+        "Clinical diagnosis/performance/treatment/rubrics and professional-language/instrument-rights/fullmethod approval remain not-performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "previousScope": "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval.",
+      "previousQualifications": [
+        "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval.",
+        "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+        "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+        "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+        "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+        "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+        "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+      ],
+      "previousSources": [
+        {
+          "primaryReview": {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          },
+          "targetedReading": {
+            "id": "criterios-de-duke",
+            "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+            "edition": "Fowler2023 DukeISCVID DOI10.1093/cid/ciad271, Tables1/2 printed3/4",
+            "personallyRead": [
+              "Tables1/2 and Table1footnotes printed3/4 personally visually read; official PDF also reopened and relevant definitions read"
+            ],
+            "files": [
+              "six-primary-documents-final32/duke-iscvid-2023.pdf",
+              "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+              "six-primary-documents-final32/duke-iscvid-2023-p4.png"
+            ],
+            "access": "Official ISCVID PDF opened directly in own web call. Other later footnotes/full paper not fully read.",
+            "supported": "Definite/possible/rejected Table1 logical combinations of already valid affirmed criteria, isolated pathological/rejection states; major/minor counts. Surgical+major-imaging tuples excluded, no contradictory pathological/rejection claims.",
+            "excluded": [
+              "Surgical major requires neither major imaging nor subsequent histologic/microbiologic confirmation; local shortlabel lacks qualifiers",
+              "Generic predisposition label lacks more-than-mild valve disease/obstructiveHCM",
+              "Pathological shortlabel omits single skin-bacterium PCR valve/wire exception without support",
+              "Clinical acquisition/diagnostic performance, conflicting flag precedence and implant timing adjudication"
+            ],
+            "sourceArtifacts": [
+              {
+                "file": "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                "bytes": 424403,
+                "sha256": "23f49274ef781fd0a9f170288a6eea34375d37d06434e99e38515f5649fd8c33"
+              },
+              {
+                "file": "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                "bytes": 431818,
+                "sha256": "d49360416b14de5e44ff9d1ccb9a8a1b0d9922c97100b1f0081b0e8c08895c7e"
+              },
+              {
+                "file": "six-primary-documents-final32/duke-iscvid-2023-p4.png",
+                "bytes": 352058,
+                "sha256": "509c30e65159dc3125ca1faa01bd6480f821a1ec4a3e1178274df2461bc93a49"
+              }
+            ]
+          },
+          "declaredOriginalMethodVersion": "Duke ISCVID 2023:combinações decritérios maior/menor/patológico, rejeição; sem substituição por Duke 2000",
+          "sourceEditionsUnchanged": true,
+          "scope": "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval."
+        }
+      ],
+      "previousIndependentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+          "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+        },
+        "status": "passed-scoped-mathematical",
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "previousImplementationBindings": [
+        {
+          "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+          "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+          "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+          "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+        }
+      ],
+      "historicalExcludedSourceObservationCount": 256,
+      "surgicalSourceAmendment": {
+        "at": "2026-10-04T22:34:36.424Z",
+        "source": {
+          "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+          "doi": "10.1093/cid/ciad271",
+          "personallyRead": "Visual printedp3 Table1/printedp4 Table2, direct official PDF surgical discussion printedp6; no fullarticle/clinical validation claim."
+        },
+        "logicalRule": "maior_cir && !maior_img && !pato; blood-major remains independently counted, not equated to subsequent tissue confirmation",
+        "priorCode": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          }
+        ],
+        "currentCode": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          }
+        ],
+        "originalSourceProof": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          }
+        ],
+        "newOwnExpectations": {
+          "file": "reports/review-20261003/duke-surgical-independent-expectations-final36.json",
+          "sha256": "73716852bd3b1c24a172917e95da7cbc5aa4594c0244954b7ccaafd41792d24b"
+        },
+        "newActualExecution": {
+          "file": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+          "sha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b"
+        },
+        "independentPeers": [
+          {
+            "file": "reports/review-20261003/duke-own-code-independent-review-verify-final36.json",
+            "sha256": "a2a0f12094ea0a587d6e9c9a27f79a97ccdd57359cecf56670add38bf9e89d3c"
+          },
+          {
+            "file": "reports/review-20261003/duke-global-independent-review-verify-final36-r4.json",
+            "sha256": "7b8e182585b8b8ec57656d5223b2b8ee579f9b63238361f2ce845c9d1531d7d2"
+          },
+          {
+            "file": "reports/review-20261003/duke-surgical-authorship-independent-review-western-final36-r2.json",
+            "sha256": "fb5375c811c439cf2ee41bacac68c0e9ed5832754cc6011b1d6a8580e257a3ed"
+          }
+        ],
+        "preservedBeforeFailures": {
+          "file": "reports/review-20261003/duke-surgical-source-before-final36.json",
+          "sha256": "95d541fd9277dbce29dbf370fe69684e5bba3be23dc9a0d0b2d07205d7f19c1a"
+        },
+        "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Duke-ISCVID 2023: combinações selecionadas da Tabela 1; maior cirúrgico condicionado pela Tabela 2, I.C, à ausência de maior de imagem e de confirmação posterior; sem equivalência automática com Duke 2000",
+    "implementationVersion": "criterios-de-duke@duke2023-surgical-source-2026-10-04+0be5980821b1",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10681650/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Duke-ISCVID 2023: combinações selecionadas da Tabela 1; maior cirúrgico condicionado pela Tabela 2, I.C, à ausência de maior de imagem e de confirmação posterior; sem equivalência automática com Duke 2000",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "pato",
+            "label": "<strong>Critério patológico:</strong> microrganismo em vegetação, tecido cardíaco, prótese ou êmbolo (cultura, histologia ou PCR), ou endocardite ativa na histologia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "maior_micro",
+            "label": "<strong>Maior microbiológico:</strong> agente típico em ≥ 2 hemoculturas separadas, agente ocasional em ≥ 3, PCR positiva no sangue para <em>Coxiella</em>, <em>Bartonella</em> ou <em>T. whipplei</em>, ou sorologia específica (IgG anti-fase I de <em>C. burnetii</em> &gt; 1:800; IgG para <em>Bartonella</em> ≥ 1:800)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "maior_img",
+            "label": "<strong>Maior de imagem:</strong> vegetação, perfuração, aneurisma, abscesso, pseudoaneurisma ou fístula ao eco/TC cardíaca; regurgitação valvar nova significativa; deiscência nova de prótese; ou PET/CT com FDG alterado em valva ou eletrodo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "maior_cir",
+            "label": "<strong>Maior cirúrgico:</strong> endocardite documentada por inspeção direta na cirurgia cardíaca, apenas na ausência de critério maior de imagem e de confirmação histológica ou microbiológica posterior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_pred",
+            "label": "<strong>Menor:</strong> predisposição (endocardite prévia, prótese valvar, reparo valvar, cardiopatia congênita, regurgitação ou estenose valvar, dispositivo intracardíaco, cardiomiopatia hipertrófica, uso de drogas injetáveis)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_febre",
+            "label": "<strong>Menor:</strong> febre &gt; 38,0 °C",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_vasc",
+            "label": "<strong>Menor:</strong> fenômenos vasculares (embolia arterial, infarto séptico pulmonar, abscesso cerebral ou esplênico, aneurisma micótico, hemorragia intracraniana, hemorragia conjuntival, lesões de Janeway, púrpura purulenta)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_imuno",
+            "label": "<strong>Menor:</strong> fenômenos imunológicos (fator reumatoide positivo, nódulos de Osler, manchas de Roth, glomerulonefrite por imunocomplexos)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_micro",
+            "label": "<strong>Menor:</strong> evidência microbiológica que não preenche o critério maior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_img",
+            "label": "<strong>Menor:</strong> PET/CT com FDG alterado até 3 meses após implante de prótese, enxerto ou dispositivo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "men_exame",
+            "label": "<strong>Menor:</strong> sopro de regurgitação novo ao exame físico, se o ecocardiograma não estiver disponível",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "rej_alt",
+            "label": "<strong>Rejeição:</strong> diagnóstico alternativo firme que explica o quadro",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "rej_res",
+            "label": "<strong>Rejeição:</strong> sem recorrência após antibioticoterapia por menos de 4 dias",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "rej_pato",
+            "label": "<strong>Rejeição:</strong> sem evidência patológica na cirurgia ou necrópsia, com antibioticoterapia por menos de 4 dias",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "3299a583ea0023fc5a71aaf0f0789abae66587dda609e0852325a0611e3f4a96"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Fowler VG et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria. Clin Infect Dis, 2023.",
+          "url": "https://doi.org/10.1093/cid/ciad271",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria.",
+            "year": "2023",
+            "firstPublicationDate": "2023-08-01",
+            "doi": "10.1093/cid/ciad271",
+            "pmid": "37138445",
+            "pmcid": "PMC10681650",
+            "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+            "authors": "Fowler VG, Durack DT, Selton-Suty C, Athan E, Bayer AS, Chamis AL, Dahl A, DiBernardo L, Durante-Mangoni E, Duval X, Fortes CQ, Fosbøl E, Hannan MM, Hasse B, Hoen B, Karchmer AW, Mestres CA, Petti CA, Pizzi MN, Preston SD, Roque A, Vandenesch F, van der Meer JTM, van der Vaart TW, Miro JM."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10681650/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "ac306ba3c142ef43be75418c168556c4bc416d195fdc6473e6b5463155685c3a",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Li JS et al. Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis. Clin Infect Dis, 2000.",
+          "url": "https://doi.org/10.1086/313753",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis.",
+            "year": "2000",
+            "firstPublicationDate": "2000-04-03",
+            "doi": "10.1086/313753",
+            "pmid": "10770721",
+            "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+            "authors": "Li JS, Sexton DJ, Mick N, Nettles R, Fowler VG, Ryan T, Bashore T, Corey GR."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10770721/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c91187343274a95da05bd9388ddc703dcec86e6e4cc59af64713281cb6a8e047",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T22:34:36.821Z",
+        "total": 1028,
+        "passed": 1028,
+        "sourceRowCount": 1028,
+        "uniqueApiInputCount": 1028,
+        "sourceContextCount": 1028,
+        "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+        "originalSourceRowCount": 1028,
+        "excludedSourceObservationCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "37deaaa8d61d02bcd12af194e5ee4c0cc209faab6420c3b8623b5d70983f5cce",
+          "total": 1028,
+          "bankRowCount": 1028,
+          "uniqueApiInputCount": 1028,
+          "sourceContextCount": 1028,
+          "fullStoredSourceRows": 1028,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+              "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            },
+            {
+              "file": "reports/review-20261003/duke-surgical-independent-expectations-final36.json",
+              "sha256": "73716852bd3b1c24a172917e95da7cbc5aa4594c0244954b7ccaafd41792d24b"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+            "sha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b"
+          },
+          "packagingRequirement": "Complete1028 current cases plus exact historical256 exclusion records and original observations downloadable. No historical expectation/observation is rewritten or retrospectively approved.",
+          "historicalExcludedSourceObservationCount": 256
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 1028,
+          "uniqueApiInputs": 1028,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "primary": {
+              "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+              "doi": "10.1093/cid/ciad271",
+              "personallyRead": "Visual printedp3 Table1/printedp4 Table2, direct official PDF surgical discussion printedp6; no fullarticle/clinical validation claim."
+            },
+            "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+            "originalEvidence": [
+              {
+                "primaryReview": {
+                  "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+                  "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+                },
+                "independentPrimaryReview": {
+                  "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+                  "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+                },
+                "targetedReading": {
+                  "id": "criterios-de-duke",
+                  "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+                  "edition": "Fowler2023 DukeISCVID DOI10.1093/cid/ciad271, Tables1/2 printed3/4",
+                  "personallyRead": [
+                    "Tables1/2 and Table1footnotes printed3/4 personally visually read; official PDF also reopened and relevant definitions read"
+                  ],
+                  "files": [
+                    "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                    "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                    "six-primary-documents-final32/duke-iscvid-2023-p4.png"
+                  ],
+                  "access": "Official ISCVID PDF opened directly in own web call. Other later footnotes/full paper not fully read.",
+                  "supported": "Definite/possible/rejected Table1 logical combinations of already valid affirmed criteria, isolated pathological/rejection states; major/minor counts. Surgical+major-imaging tuples excluded, no contradictory pathological/rejection claims.",
+                  "excluded": [
+                    "Surgical major requires neither major imaging nor subsequent histologic/microbiologic confirmation; local shortlabel lacks qualifiers",
+                    "Generic predisposition label lacks more-than-mild valve disease/obstructiveHCM",
+                    "Pathological shortlabel omits single skin-bacterium PCR valve/wire exception without support",
+                    "Clinical acquisition/diagnostic performance, conflicting flag precedence and implant timing adjudication"
+                  ],
+                  "sourceArtifacts": [
+                    {
+                      "file": "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                      "bytes": 424403,
+                      "sha256": "23f49274ef781fd0a9f170288a6eea34375d37d06434e99e38515f5649fd8c33"
+                    },
+                    {
+                      "file": "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                      "bytes": 431818,
+                      "sha256": "d49360416b14de5e44ff9d1ccb9a8a1b0d9922c97100b1f0081b0e8c08895c7e"
+                    },
+                    {
+                      "file": "six-primary-documents-final32/duke-iscvid-2023-p4.png",
+                      "bytes": 352058,
+                      "sha256": "509c30e65159dc3125ca1faa01bd6480f821a1ec4a3e1178274df2461bc93a49"
+                    }
+                  ]
+                },
+                "declaredOriginalMethodVersion": "Duke ISCVID 2023:combinações decritérios maior/menor/patológico, rejeição; sem substituição por Duke 2000",
+                "sourceEditionsUnchanged": true,
+                "scope": "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval."
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+        "evidenceSha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b",
+        "independentPeer": {
+          "status": "passed-scoped-selected-source-predicate",
+          "evidence": {
+            "file": "reports/review-20261003/duke-own-code-independent-review-verify-final36.json",
+            "sha256": "a2a0f12094ea0a587d6e9c9a27f79a97ccdd57359cecf56670add38bf9e89d3c"
+          },
+          "semanticEvidence": [
+            {
+              "file": "reports/review-20261003/duke-global-independent-review-verify-final36-r4.json",
+              "sha256": "7b8e182585b8b8ec57656d5223b2b8ee579f9b63238361f2ce845c9d1531d7d2"
+            },
+            {
+              "file": "reports/review-20261003/duke-surgical-authorship-independent-review-western-final36-r2.json",
+              "sha256": "fb5375c811c439cf2ee41bacac68c0e9ed5832754cc6011b1d6a8580e257a3ed"
+            }
+          ],
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          }
+        ],
+        "qualifications": [
+          "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+          "772 original passed cases are preserved byte-value exact. Former256 source-ineligible records and2628 before-repair selected discrepancies remain historical, without retrospective approval. Sixteen extra own eligibility witnesses and512 independent peer vectors are technical witnesses outside these coverage counters.",
+          "Selected integer/Boolean/classification-code comparison is strict; no fixture or numeric tolerance was changed. Only the existing pathological flag is used as sufficient later confirmation, and this interface does not represent full chronology.",
+          "Clinical diagnosis/performance/treatment/rubrics and professional-language/instrument-rights/fullmethod approval remain not-performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "previousScope": "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval.",
+        "previousQualifications": [
+          "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval.",
+          "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+          "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+          "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+          "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+          "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+          "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+        ],
+        "previousSources": [
+          {
+            "primaryReview": {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            },
+            "targetedReading": {
+              "id": "criterios-de-duke",
+              "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+              "edition": "Fowler2023 DukeISCVID DOI10.1093/cid/ciad271, Tables1/2 printed3/4",
+              "personallyRead": [
+                "Tables1/2 and Table1footnotes printed3/4 personally visually read; official PDF also reopened and relevant definitions read"
+              ],
+              "files": [
+                "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                "six-primary-documents-final32/duke-iscvid-2023-p4.png"
+              ],
+              "access": "Official ISCVID PDF opened directly in own web call. Other later footnotes/full paper not fully read.",
+              "supported": "Definite/possible/rejected Table1 logical combinations of already valid affirmed criteria, isolated pathological/rejection states; major/minor counts. Surgical+major-imaging tuples excluded, no contradictory pathological/rejection claims.",
+              "excluded": [
+                "Surgical major requires neither major imaging nor subsequent histologic/microbiologic confirmation; local shortlabel lacks qualifiers",
+                "Generic predisposition label lacks more-than-mild valve disease/obstructiveHCM",
+                "Pathological shortlabel omits single skin-bacterium PCR valve/wire exception without support",
+                "Clinical acquisition/diagnostic performance, conflicting flag precedence and implant timing adjudication"
+              ],
+              "sourceArtifacts": [
+                {
+                  "file": "six-primary-documents-final32/duke-iscvid-2023.pdf",
+                  "bytes": 424403,
+                  "sha256": "23f49274ef781fd0a9f170288a6eea34375d37d06434e99e38515f5649fd8c33"
+                },
+                {
+                  "file": "six-primary-documents-final32/duke-iscvid-2023-p3.png",
+                  "bytes": 431818,
+                  "sha256": "d49360416b14de5e44ff9d1ccb9a8a1b0d9922c97100b1f0081b0e8c08895c7e"
+                },
+                {
+                  "file": "six-primary-documents-final32/duke-iscvid-2023-p4.png",
+                  "bytes": 352058,
+                  "sha256": "509c30e65159dc3125ca1faa01bd6480f821a1ec4a3e1178274df2461bc93a49"
+                }
+              ]
+            },
+            "declaredOriginalMethodVersion": "Duke ISCVID 2023:combinações decritérios maior/menor/patológico, rejeição; sem substituição por Duke 2000",
+            "sourceEditionsUnchanged": true,
+            "scope": "772 source-eligible already affirmed DukeISCVID2023 Table1 count/logical-class combinations. Surgical major plus major imaging is expressly excluded;256 original such states retained as unapproved observations only. No clinical acquisition, contradictory pathological/rejection precedence, diagnostic performance or full-method approval."
+          }
+        ],
+        "previousIndependentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+            "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+          },
+          "status": "passed-scoped-mathematical",
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "previousImplementationBindings": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          }
+        ],
+        "historicalExcludedSourceObservationCount": 256,
+        "surgicalSourceAmendment": {
+          "at": "2026-10-04T22:34:36.424Z",
+          "source": {
+            "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+            "doi": "10.1093/cid/ciad271",
+            "personallyRead": "Visual printedp3 Table1/printedp4 Table2, direct official PDF surgical discussion printedp6; no fullarticle/clinical validation claim."
+          },
+          "logicalRule": "maior_cir && !maior_img && !pato; blood-major remains independently counted, not equated to subsequent tissue confirmation",
+          "priorCode": [
+            {
+              "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+              "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+              "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+              "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+            }
+          ],
+          "currentCode": [
+            {
+              "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+              "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+              "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+              "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+            }
+          ],
+          "originalSourceProof": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+              "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            }
+          ],
+          "newOwnExpectations": {
+            "file": "reports/review-20261003/duke-surgical-independent-expectations-final36.json",
+            "sha256": "73716852bd3b1c24a172917e95da7cbc5aa4594c0244954b7ccaafd41792d24b"
+          },
+          "newActualExecution": {
+            "file": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+            "sha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b"
+          },
+          "independentPeers": [
+            {
+              "file": "reports/review-20261003/duke-own-code-independent-review-verify-final36.json",
+              "sha256": "a2a0f12094ea0a587d6e9c9a27f79a97ccdd57359cecf56670add38bf9e89d3c"
+            },
+            {
+              "file": "reports/review-20261003/duke-global-independent-review-verify-final36-r4.json",
+              "sha256": "7b8e182585b8b8ec57656d5223b2b8ee579f9b63238361f2ce845c9d1531d7d2"
+            },
+            {
+              "file": "reports/review-20261003/duke-surgical-authorship-independent-review-western-final36-r2.json",
+              "sha256": "fb5375c811c439cf2ee41bacac68c0e9ed5832754cc6011b1d6a8580e257a3ed"
+            }
+          ],
+          "preservedBeforeFailures": {
+            "file": "reports/review-20261003/duke-surgical-source-before-final36.json",
+            "sha256": "95d541fd9277dbce29dbf370fe69684e5bba3be23dc9a0d0b2d07205d7f19c1a"
+          },
+          "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c",
+      "dukeSurgicalSourceAmendment": {
+        "at": "2026-10-04T22:34:36.424Z",
+        "source": {
+          "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+          "doi": "10.1093/cid/ciad271",
+          "personallyRead": "Visual printedp3 Table1/printedp4 Table2, direct official PDF surgical discussion printedp6; no fullarticle/clinical validation claim."
+        },
+        "logicalRule": "maior_cir && !maior_img && !pato; blood-major remains independently counted, not equated to subsequent tissue confirmation",
+        "priorCode": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          }
+        ],
+        "currentCode": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          }
+        ],
+        "originalSourceProof": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          }
+        ],
+        "newOwnExpectations": {
+          "file": "reports/review-20261003/duke-surgical-independent-expectations-final36.json",
+          "sha256": "73716852bd3b1c24a172917e95da7cbc5aa4594c0244954b7ccaafd41792d24b"
+        },
+        "newActualExecution": {
+          "file": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+          "sha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b"
+        },
+        "independentPeers": [
+          {
+            "file": "reports/review-20261003/duke-own-code-independent-review-verify-final36.json",
+            "sha256": "a2a0f12094ea0a587d6e9c9a27f79a97ccdd57359cecf56670add38bf9e89d3c"
+          },
+          {
+            "file": "reports/review-20261003/duke-global-independent-review-verify-final36-r4.json",
+            "sha256": "7b8e182585b8b8ec57656d5223b2b8ee579f9b63238361f2ce845c9d1531d7d2"
+          },
+          {
+            "file": "reports/review-20261003/duke-surgical-authorship-independent-review-western-final36-r2.json",
+            "sha256": "fb5375c811c439cf2ee41bacac68c0e9ed5832754cc6011b1d6a8580e257a3ed"
+          }
+        ],
+        "preservedBeforeFailures": {
+          "file": "reports/review-20261003/duke-surgical-source-before-final36.json",
+          "sha256": "95d541fd9277dbce29dbf370fe69684e5bba3be23dc9a0d0b2d07205d7f19c1a"
+        },
+        "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "previousInputContract": {
+          "fields": [
+            {
+              "key": "pato",
+              "label": "<strong>Critério patológico:</strong> microrganismo em vegetação, tecido cardíaco, prótese ou êmbolo (cultura, histologia ou PCR), ou endocardite ativa na histologia",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "maior_micro",
+              "label": "<strong>Maior microbiológico:</strong> agente típico em ≥ 2 hemoculturas separadas, agente ocasional em ≥ 3, PCR positiva no sangue para <em>Coxiella</em>, <em>Bartonella</em> ou <em>T. whipplei</em>, ou sorologia específica (IgG anti-fase I de <em>C. burnetii</em> &gt; 1:800; IgG para <em>Bartonella</em> ≥ 1:800)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "maior_img",
+              "label": "<strong>Maior de imagem:</strong> vegetação, perfuração, aneurisma, abscesso, pseudoaneurisma ou fístula ao eco/TC cardíaca; regurgitação valvar nova significativa; deiscência nova de prótese; ou PET/CT com FDG alterado em valva ou eletrodo",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "maior_cir",
+              "label": "<strong>Maior cirúrgico:</strong> endocardite documentada por inspeção direta na cirurgia cardíaca",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_pred",
+              "label": "<strong>Menor:</strong> predisposição (endocardite prévia, prótese valvar, reparo valvar, cardiopatia congênita, regurgitação ou estenose valvar, dispositivo intracardíaco, cardiomiopatia hipertrófica, uso de drogas injetáveis)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_febre",
+              "label": "<strong>Menor:</strong> febre &gt; 38,0 °C",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_vasc",
+              "label": "<strong>Menor:</strong> fenômenos vasculares (embolia arterial, infarto séptico pulmonar, abscesso cerebral ou esplênico, aneurisma micótico, hemorragia intracraniana, hemorragia conjuntival, lesões de Janeway, púrpura purulenta)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_imuno",
+              "label": "<strong>Menor:</strong> fenômenos imunológicos (fator reumatoide positivo, nódulos de Osler, manchas de Roth, glomerulonefrite por imunocomplexos)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_micro",
+              "label": "<strong>Menor:</strong> evidência microbiológica que não preenche o critério maior",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_img",
+              "label": "<strong>Menor:</strong> PET/CT com FDG alterado até 3 meses após implante de prótese, enxerto ou dispositivo",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "men_exame",
+              "label": "<strong>Menor:</strong> sopro de regurgitação novo ao exame físico, se o ecocardiograma não estiver disponível",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "rej_alt",
+              "label": "<strong>Rejeição:</strong> diagnóstico alternativo firme que explica o quadro",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "rej_res",
+              "label": "<strong>Rejeição:</strong> sem recorrência após antibioticoterapia por menos de 4 dias",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "rej_pato",
+              "label": "<strong>Rejeição:</strong> sem evidência patológica na cirurgia ou necrópsia, com antibioticoterapia por menos de 4 dias",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            }
+          ],
+          "hash": "7a06167d64afc817babedfc86a3ab01ede15f486feb802779aeec5f2e9bdcbca"
+        },
+        "previousFormula": "<ul><li><strong>Definida:</strong> critério patológico, <em>ou</em> 2 maiores, <em>ou</em> 1 maior + 3 menores, <em>ou</em> 5 menores.</li><li><strong>Possível:</strong> 1 maior + 1 menor, <em>ou</em> 3 menores.</li><li><strong>Rejeitada:</strong> diagnóstico alternativo firme, resolução sem recorrência com menos de 4 dias de antibiótico, ausência de evidência patológica na cirurgia/necrópsia com menos de 4 dias de antibiótico, <em>ou</em> não preenche os critérios de possível.</li></ul>",
+        "previousLimits": "Os critérios Duke-ISCVID 2023 dependem de definições específicas de microbiologia, imagem, inspeção intraoperatória e condições predisponentes. Alguns microrganismos só são classificados como típicos na presença de prótese intracardíaca. A edição 2023 também altera exigências de culturas da edição anterior; contagens isoladas sem essas definições não reproduzem o sistema completo.",
+        "previousMethodVersion": "Duke ISCVID 2023:combinações decritérios maior/menor/patológico, rejeição; sem substituição por Duke 2000",
+        "previousImplementationVersion": "criterios-de-duke@native-2026-10-03+a17b3c48786a"
+      }
+    },
+    "limits": "Os critérios Duke-ISCVID 2023 dependem de definições específicas de microbiologia, imagem, inspeção intraoperatória e condições predisponentes. Alguns microrganismos só são classificados como típicos na presença de prótese intracardíaca. A edição 2023 também altera exigências de culturas da edição anterior; contagens isoladas sem essas definições não reproduzem o sistema completo. A Tabela 2, seção I.C, limita o maior cirúrgico à ausência de maior de imagem e de confirmação histológica ou microbiológica posterior. Nesta interface, selecionar o critério patológico impede a soma adicional do maior cirúrgico; o maior microbiológico do sangue permanece separado. A pessoa que preenche deve verificar a confirmação posterior e as definições da fonte: os campos booleanos não registram toda a cronologia ou a aquisição dos achados. A conferência corrige somente esta contagem e suas combinações selecionadas; não valida diagnóstico, desempenho clínico, tratamento ou o método completo.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.782Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra toda tabela patológica/maior/menor/rejeição nem condições de prótese por teste; Duke 2000 não é intercambiável automaticamente."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "dukeSurgicalSourceAmendment": {
+        "at": "2026-10-04T22:34:36.424Z",
+        "source": {
+          "url": "https://www.iscvid.org/wp-content/uploads/2023/07/2023-The-2023-Duke-ISCVID-Criteria-for-Infective-Endocarditis-Fowler-CID-May-4-2023-Final.pdf",
+          "doi": "10.1093/cid/ciad271",
+          "personallyRead": "Visual printedp3 Table1/printedp4 Table2, direct official PDF surgical discussion printedp6; no fullarticle/clinical validation claim."
+        },
+        "logicalRule": "maior_cir && !maior_img && !pato; blood-major remains independently counted, not equated to subsequent tissue confirmation",
+        "priorCode": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "a17b3c48786af68b0d75c9d9ef2472ae58ba09f2a83b7bffb22a593b9d2c9f34"
+          }
+        ],
+        "currentCode": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-duke/calculator.js",
+            "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+          }
+        ],
+        "originalSourceProof": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          }
+        ],
+        "newOwnExpectations": {
+          "file": "reports/review-20261003/duke-surgical-independent-expectations-final36.json",
+          "sha256": "73716852bd3b1c24a172917e95da7cbc5aa4594c0244954b7ccaafd41792d24b"
+        },
+        "newActualExecution": {
+          "file": "reports/review-20261003/duke-surgical-staged-check-final36-r2.json",
+          "sha256": "ab7a1b8e0e767badf5e386b877d94b555281fa18d8d612da6f1878409432ba7b"
+        },
+        "independentPeers": [
+          {
+            "file": "reports/review-20261003/duke-own-code-independent-review-verify-final36.json",
+            "sha256": "a2a0f12094ea0a587d6e9c9a27f79a97ccdd57359cecf56670add38bf9e89d3c"
+          },
+          {
+            "file": "reports/review-20261003/duke-global-independent-review-verify-final36-r4.json",
+            "sha256": "7b8e182585b8b8ec57656d5223b2b8ee579f9b63238361f2ce845c9d1531d7d2"
+          },
+          {
+            "file": "reports/review-20261003/duke-surgical-authorship-independent-review-western-final36-r2.json",
+            "sha256": "fb5375c811c439cf2ee41bacac68c0e9ed5832754cc6011b1d6a8580e257a3ed"
+          }
+        ],
+        "preservedBeforeFailures": {
+          "file": "reports/review-20261003/duke-surgical-source-before-final36.json",
+          "sha256": "95d541fd9277dbce29dbf370fe69684e5bba3be23dc9a0d0b2d07205d7f19c1a"
+        },
+        "scope": "1028 selected Duke-ISCVID2023 Table1 major/minor counts and classification-code combinations:772 original source-eligible cases unchanged plus256 new postrepair surgical+major-imaging inputs, using the Table2I.C guard surgical&&!imaging&&!pathology. Existing pathological Boolean is a sufficient selected confirmation flag; chronology and actual acquisition are not fully represented. No clinical diagnosis, diagnostic performance, treatment, rubrics, chronology, language authorization or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      }
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+    "bytes": 7858,
+    "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "086a84ccb3efdd7d311bfd33cc235a38bb9a43de1abb6892fa7c2d5551980abc",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "013d302af0bc39cd61d9e6abd025d436ad83db19f84b8e28915a4be25f54f18b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "013d302af0bc39cd61d9e6abd025d436ad83db19f84b8e28915a4be25f54f18b",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

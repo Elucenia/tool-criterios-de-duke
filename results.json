@@ -1,0 +1,912 @@
+{
+  "id": "criterios-de-duke",
+  "at": "2026-10-05T17:29:15.035Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+    "bytes": 7858,
+    "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+  },
+  "cases": [
+    {
+      "name": "Hemoculturas típicas + vegetação ao eco: definida",
+      "input": {
+        "maior_micro": true,
+        "maior_img": true,
+        "pato": false,
+        "maior_cir": false,
+        "men_pred": false,
+        "men_febre": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "Definida",
+          "obtained": "Definida",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.maiores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.menores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Definida",
+          "obtained": "Definida",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "1 maior + 3 menores: definida",
+      "input": {
+        "maior_micro": true,
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "pato": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 1,
+          "menores": 3,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Definida",
+          "obtained": "Definida",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "5 menores: definida",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "men_imuno": true,
+        "men_micro": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 5,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.menores",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Definida",
+          "obtained": "Definida",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Critério patológico isolado: definida",
+      "input": {
+        "pato": true,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_pred": false,
+        "men_febre": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 0,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "definida",
+          "obtained": "definida",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Definida",
+          "obtained": "Definida",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "1 maior + 2 menores: possível",
+      "input": {
+        "maior_img": true,
+        "men_pred": true,
+        "men_febre": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 1,
+          "menores": 2,
+          "cls": "possível"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "possível",
+          "obtained": "possível",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "possível",
+          "obtained": "possível",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Possível",
+          "obtained": "Possível",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "3 menores: possível",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "possível"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "possível",
+          "obtained": "possível",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "possível",
+          "obtained": "possível",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Possível",
+          "obtained": "Possível",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "rej_alt": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "rejeitada"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "rejeitada",
+          "obtained": "rejeitada",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "rejeitada",
+          "obtained": "rejeitada",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Rejeitada",
+          "obtained": "Rejeitada",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "2 menores: rejeitada",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "obtained": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 2,
+          "cls": "rejeitada"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cls",
+          "expected": "rejeitada",
+          "obtained": "rejeitada",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cls",
+          "expected": "rejeitada",
+          "obtained": "rejeitada",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Rejeitada",
+          "obtained": "Rejeitada",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 18,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

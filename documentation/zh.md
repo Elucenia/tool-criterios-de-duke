@@ -1,0 +1,117 @@
+<!-- ELUCENIA technical documentation · criterios-de-duke · zh · no clinical/professional/rights approval -->
+
+# Duke-ISCVID 2023 标准
+
+[条件、来源与许可](https://elucenia.org/zh/tools/criterios-de-duke)
+
+## 使用方法
+
+在门户中使用工具，或通过本地 HTTP 服务器打开 index.html。选择语言，填写各字段，然后计算。
+
+## 输入与单位
+
+### 病理标准：赘生物、心脏组织、假体或栓子中检出微生物（培养、组织学或 PCR），或组织学显示活动性心内膜炎
+
+`pato`
+
+### 微生物学主要标准：典型病原体在 ≥ 2 次独立血培养中检出，偶发病原体在 ≥ 3 次检出；血液 Coxiella、Bartonella 或 T. whipplei PCR 阳性；或特异性血清学（C. burnetii I 相 IgG \> 1:800；Bartonella IgG ≥ 1:800）
+
+`maior_micro`
+
+### 影像学主要标准：心脏超声/CT 显示赘生物、穿孔、动脉瘤、脓肿、假性动脉瘤或瘘；新出现的显著瓣膜反流；新出现的假体裂开；或瓣膜/电极的 FDG PET/CT 异常
+
+`maior_img`
+
+### 外科主要标准：心脏手术中直接检查所证实的心内膜炎，仅在不存在影像学主要标准且无后续组织学或微生物学确认时计入
+
+`maior_cir`
+
+### 次要标准：易感因素（既往心内膜炎、人工瓣膜、瓣膜修复、先天性心脏病、瓣膜反流或狭窄、心内装置、肥厚型心肌病、注射毒品）
+
+`men_pred`
+
+### 次要标准：发热 \> 38.0 °C
+
+`men_febre`
+
+### 次要标准：血管现象（动脉栓塞、脓毒性肺梗死、脑或脾脓肿、感染性动脉瘤、颅内或结膜出血、Janeway 损害、化脓性紫癜）
+
+`men_vasc`
+
+### 次要标准：免疫现象（类风湿因子阳性、Osler 结节、Roth 斑、免疫复合物性肾小球肾炎）
+
+`men_imuno`
+
+### 次要标准：未满足主要标准的微生物学证据
+
+`men_micro`
+
+### 次要标准：假体、移植物或装置植入后 3 个月内 FDG PET/CT 异常
+
+`men_img`
+
+### 次要标准：超声不可用时体检发现新出现的反流性杂音
+
+`men_exame`
+
+### 排除：明确的其他诊断能够解释病情
+
+`rej_alt`
+
+### 排除：抗生素治疗不足 4 天后未复发
+
+`rej_res`
+
+### 排除：抗生素治疗不足 4 天，手术或尸检无病理证据
+
+`rej_pato`
+
+## 方法版本
+
+Duke-ISCVID 2023：表1中的选定组合；按表2的I.C节，外科主要标准须满足无影像学主要标准且无后续确认的条件；不自动等同于Duke 2000
+
+## 已记录的公式
+
+确定： 病理标准, 或 2项大标准, 或 1项大标准+3项小标准, 或 5项小标准.
+
+可能： 1项大标准+1项小标准, 或 3项小标准.
+
+排除： 明确替代诊断；抗生素使用不足4天即消退且无复发；使用抗生素不足4天时手术/尸检无病理证据； 或 不符合可能病例标准。
+
+外科主要标准的计数：仅在已勾选该项、且未勾选影像学主要标准或病理学标准时增加一个主要标准。须核实表2规定的后续确认；血液微生物学主要标准并不自动等同于后续的组织确认。
+
+## 限制与适用人群
+
+Duke-ISCVID 2023标准依赖微生物学、影像、术中观察和易感状况的特定定义。某些微生物只有在存在心内假体时才被归为典型病原体。2023版还修改了上一版的培养要求；缺少这些定义时，单纯计数不能重现完整系统。 表2的I.C节规定，外科主要标准仅适用于不存在影像学主要标准且无后续组织学或微生物学确认的情况。在本界面中，勾选病理学标准后不再额外计入外科主要标准；血液微生物学主要标准单独处理。填写者须核实后续确认及来源定义：布尔字段不能记录完整时间顺序，也不能记录各项发现如何获得。本次核对仅修正该计数及已选择的组合，不验证诊断、临床性能、治疗或完整方法。
+
+## 参考文献
+
+- [Fowler VG et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria. Clin Infect Dis, 2023.](https://doi.org/10.1093/cid/ciad271)
+
+- [Li JS et al. Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis. Clin Infect Dis, 2000.](https://doi.org/10.1086/313753)
+
+## 复现技术测试
+
+在此仓库的根目录中运行 node test.cjs，以重复已记录的合成案例。原始输入、预期结果和容差保持不变。技术测试不构成临床验证。
+
+```sh
+node test.cjs
+```
+
+tool.json 包含来源、版本和审查范围。examples.json 保留合成输入与预期结果；results.json 记录实际得到的结果。
+
+[记录与参考文献](../tool.json) · [JavaScript代码](../calculator.js) · [参考案例](../examples.json) · [results.json](../results.json)
+
+## 审查与使用条件
+
+尚未开展独立临床审查。
+
+此界面为自主编写的翻译，并非官方或认证版本。尚未完成独立临床审查、专业语言审查或工具权利授权。
+
+公式或分类结果。解释、处理及适用性须结合专业评估和所选来源。
+
+## 许可与署名
+
+Apache-2.0 仅适用于 ELUCENIA 代码。工具、出版物、翻译和数据的权利仍归各自权利人所有。请保留 LICENSE 和 NOTICE。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

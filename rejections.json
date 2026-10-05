@@ -1,0 +1,374 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean pato",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": "2",
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pato"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean maior_micro",
+    "input": {
+      "maior_micro": "2",
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior_micro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean maior_img",
+    "input": {
+      "maior_micro": true,
+      "maior_img": "2",
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior_img"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean maior_cir",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": "2",
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior_cir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_pred",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": "2",
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_pred"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_febre",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": "2",
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_febre"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_vasc",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": "2",
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_vasc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_imuno",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": "2",
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_imuno"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_micro",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": "2",
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_micro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_img",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": "2",
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_img"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean men_exame",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": "2",
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "men_exame"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean rej_alt",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": "2",
+      "rej_res": false,
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rej_alt"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean rej_res",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": "2",
+      "rej_pato": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rej_res"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean rej_pato",
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rej_pato"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

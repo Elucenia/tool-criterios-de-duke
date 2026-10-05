@@ -1,9 +1,28 @@
 [
   {
-    "label": "Hemoculturas típicas + vegetação ao eco: definida",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Hemoculturas típicas + vegetação ao eco: definida",
+    "originalInput": {
       "maior_micro": true,
       "maior_img": true
+    },
+    "input": {
+      "maior_micro": true,
+      "maior_img": true,
+      "pato": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -14,19 +33,53 @@
       "level": "high",
       "main": "Definida"
     },
-    "originalInput": {
-      "maior_micro": true,
-      "maior_img": true
+    "recordedResult": {
+      "main": [
+        "Definida",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 2,
+        "menores": 0,
+        "cls": "definida"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "1 maior + 3 menores: definida",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "1 maior + 3 menores: definida",
+    "originalInput": {
       "maior_micro": true,
       "men_pred": true,
       "men_febre": true,
       "men_vasc": true
+    },
+    "input": {
+      "maior_micro": true,
+      "men_pred": true,
+      "men_febre": true,
+      "men_vasc": true,
+      "pato": false,
+      "maior_img": false,
+      "maior_cir": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -34,22 +87,54 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "maior_micro": true,
-      "men_pred": true,
-      "men_febre": true,
-      "men_vasc": true
+    "recordedResult": {
+      "main": [
+        "Definida",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 1,
+        "menores": 3,
+        "cls": "definida"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "5 menores: definida",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "5 menores: definida",
+    "originalInput": {
       "men_pred": true,
       "men_febre": true,
       "men_vasc": true,
       "men_imuno": true,
       "men_micro": true
+    },
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_vasc": true,
+      "men_imuno": true,
+      "men_micro": true,
+      "pato": false,
+      "maior_micro": false,
+      "maior_img": false,
+      "maior_cir": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -58,19 +143,50 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "men_pred": true,
-      "men_febre": true,
-      "men_vasc": true,
-      "men_imuno": true,
-      "men_micro": true
+    "recordedResult": {
+      "main": [
+        "Definida",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 0,
+        "menores": 5,
+        "cls": "definida"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Critério patológico isolado: definida",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Critério patológico isolado: definida",
+    "originalInput": {
       "pato": true
+    },
+    "input": {
+      "pato": true,
+      "maior_micro": false,
+      "maior_img": false,
+      "maior_cir": false,
+      "men_pred": false,
+      "men_febre": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -78,17 +194,52 @@
       },
       "verdict": "patológico"
     },
-    "originalInput": {
-      "pato": true
+    "recordedResult": {
+      "main": [
+        "Definida",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 0,
+        "menores": 0,
+        "cls": "definida"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "1 maior + 2 menores: possível",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "1 maior + 2 menores: possível",
+    "originalInput": {
       "maior_img": true,
       "men_pred": true,
       "men_febre": true
+    },
+    "input": {
+      "maior_img": true,
+      "men_pred": true,
+      "men_febre": true,
+      "pato": false,
+      "maior_micro": false,
+      "maior_cir": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -96,19 +247,52 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "maior_img": true,
-      "men_pred": true,
-      "men_febre": true
+    "recordedResult": {
+      "main": [
+        "Possível",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 1,
+        "menores": 2,
+        "cls": "possível"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "3 menores: possível",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "3 menores: possível",
+    "originalInput": {
       "men_pred": true,
       "men_febre": true,
       "men_imuno": true
+    },
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_imuno": true,
+      "pato": false,
+      "maior_micro": false,
+      "maior_img": false,
+      "maior_cir": false,
+      "men_vasc": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -116,20 +300,53 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "men_pred": true,
-      "men_febre": true,
-      "men_imuno": true
+    "recordedResult": {
+      "main": [
+        "Possível",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 0,
+        "menores": 3,
+        "cls": "possível"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "3 menores com diagnóstico alternativo firme: rejeitada",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 6,
+    "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+    "originalInput": {
       "men_pred": true,
       "men_febre": true,
       "men_imuno": true,
       "rej_alt": true
+    },
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "men_imuno": true,
+      "rej_alt": true,
+      "pato": false,
+      "maior_micro": false,
+      "maior_img": false,
+      "maior_cir": false,
+      "men_vasc": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -137,19 +354,51 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "men_pred": true,
-      "men_febre": true,
-      "men_imuno": true,
-      "rej_alt": true
+    "recordedResult": {
+      "main": [
+        "Rejeitada",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 0,
+        "menores": 3,
+        "cls": "rejeitada"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "2 menores: rejeitada",
-    "input": {
+    "id": "criterios-de-duke",
+    "kind": "native-source-reference",
+    "index": 7,
+    "name": "2 menores: rejeitada",
+    "originalInput": {
       "men_pred": true,
       "men_febre": true
+    },
+    "input": {
+      "men_pred": true,
+      "men_febre": true,
+      "pato": false,
+      "maior_micro": false,
+      "maior_img": false,
+      "maior_cir": false,
+      "men_vasc": false,
+      "men_imuno": false,
+      "men_micro": false,
+      "men_img": false,
+      "men_exame": false,
+      "rej_alt": false,
+      "rej_res": false,
+      "rej_pato": false
     },
     "expected": {
       "raw": {
@@ -157,10 +406,25 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "men_pred": true,
-      "men_febre": true
+    "recordedResult": {
+      "main": [
+        "Rejeitada",
+        ""
+      ],
+      "label": "Duke-ISCVID 2023",
+      "raw": {
+        "maiores": 0,
+        "menores": 2,
+        "cls": "rejeitada"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
