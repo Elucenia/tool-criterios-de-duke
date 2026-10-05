@@ -1,0 +1,2343 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "criterios-de-duke",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/criterios-de-duke/calculator.js",
+    "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c",
+    "bytes": 7858
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 8,
+    "replayed": 8,
+    "passed": 8,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Hemoculturas típicas + vegetação ao eco: definida",
+      "originalInput": {
+        "maior_micro": true,
+        "maior_img": true
+      },
+      "input": {
+        "maior_micro": true,
+        "maior_img": true,
+        "pato": false,
+        "maior_cir": false,
+        "men_pred": false,
+        "men_febre": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_pred",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_febre",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_vasc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_imuno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "cls": "definida"
+        },
+        "level": "high",
+        "main": "Definida"
+      },
+      "recordedResult": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "cls": "definida"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "maior_micro": true,
+            "maior_img": true,
+            "pato": false,
+            "maior_cir": false,
+            "men_pred": false,
+            "men_febre": false,
+            "men_vasc": false,
+            "men_imuno": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:25.903Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Definida",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 2,
+                "menores": 0,
+                "cls": "definida"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "fd05ce0b8206e63e5fb2db871d051f9ee17b9be68530ebb30552445653325f05",
+          "bytes": 173,
+          "elapsedMs": 5.632799999999406
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:25.903Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Definida",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 2,
+              "menores": 0,
+              "cls": "definida"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "fd05ce0b8206e63e5fb2db871d051f9ee17b9be68530ebb30552445653325f05",
+        "bytes": 173,
+        "elapsedMs": 5.632799999999406
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Definida",
+            "obtained": "Definida",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.maiores",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.menores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Definida",
+            "obtained": "Definida",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "1 maior + 3 menores: definida",
+      "originalInput": {
+        "maior_micro": true,
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true
+      },
+      "input": {
+        "maior_micro": true,
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "pato": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_imuno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "cls": "definida"
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 1,
+          "menores": 3,
+          "cls": "definida"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "maior_micro": true,
+            "men_pred": true,
+            "men_febre": true,
+            "men_vasc": true,
+            "pato": false,
+            "maior_img": false,
+            "maior_cir": false,
+            "men_imuno": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:26.217Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Definida",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 1,
+                "menores": 3,
+                "cls": "definida"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e0a68d01527776531e7c40f0b2f3791b2e9365c0e1c5a324302c9e5d3fd31113",
+          "bytes": 173,
+          "elapsedMs": 5.729399999996531
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:26.217Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Definida",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 1,
+              "menores": 3,
+              "cls": "definida"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e0a68d01527776531e7c40f0b2f3791b2e9365c0e1c5a324302c9e5d3fd31113",
+        "bytes": 173,
+        "elapsedMs": 5.729399999996531
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Definida",
+            "obtained": "Definida",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "5 menores: definida",
+      "originalInput": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "men_imuno": true,
+        "men_micro": true
+      },
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "men_imuno": true,
+        "men_micro": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "menores": 5,
+          "cls": "definida"
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 5,
+          "cls": "definida"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "men_pred": true,
+            "men_febre": true,
+            "men_vasc": true,
+            "men_imuno": true,
+            "men_micro": true,
+            "pato": false,
+            "maior_micro": false,
+            "maior_img": false,
+            "maior_cir": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:26.531Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Definida",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 0,
+                "menores": 5,
+                "cls": "definida"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "091081e54bd9c8bbfe3a1cbe72da69a0e0b0ba57790ac36dd17ba014e05b7fab",
+          "bytes": 173,
+          "elapsedMs": 3.042700000005425
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:26.531Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Definida",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 0,
+              "menores": 5,
+              "cls": "definida"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "091081e54bd9c8bbfe3a1cbe72da69a0e0b0ba57790ac36dd17ba014e05b7fab",
+        "bytes": 173,
+        "elapsedMs": 3.042700000005425
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.menores",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Definida",
+            "obtained": "Definida",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Critério patológico isolado: definida",
+      "originalInput": {
+        "pato": true
+      },
+      "input": {
+        "pato": true,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_pred": false,
+        "men_febre": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "maior_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_pred",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_febre",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_vasc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_imuno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "cls": "definida"
+        },
+        "verdict": "patológico"
+      },
+      "recordedResult": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 0,
+          "cls": "definida"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "pato": true,
+            "maior_micro": false,
+            "maior_img": false,
+            "maior_cir": false,
+            "men_pred": false,
+            "men_febre": false,
+            "men_vasc": false,
+            "men_imuno": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:26.831Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Definida",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 0,
+                "menores": 0,
+                "cls": "definida"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c77ca33a941267257403c980ecae6caa4eb2d6ffdaa92662d8d4bcd0d6d059dd",
+          "bytes": 173,
+          "elapsedMs": 3.533900000002177
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:26.831Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Definida",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 0,
+              "menores": 0,
+              "cls": "definida"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c77ca33a941267257403c980ecae6caa4eb2d6ffdaa92662d8d4bcd0d6d059dd",
+        "bytes": 173,
+        "elapsedMs": 3.533900000002177
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "definida",
+            "obtained": "definida",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Definida",
+            "obtained": "Definida",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "1 maior + 2 menores: possível",
+      "originalInput": {
+        "maior_img": true,
+        "men_pred": true,
+        "men_febre": true
+      },
+      "input": {
+        "maior_img": true,
+        "men_pred": true,
+        "men_febre": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_vasc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_imuno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "cls": "possível"
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 1,
+          "menores": 2,
+          "cls": "possível"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "maior_img": true,
+            "men_pred": true,
+            "men_febre": true,
+            "pato": false,
+            "maior_micro": false,
+            "maior_cir": false,
+            "men_vasc": false,
+            "men_imuno": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:27.146Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Possível",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 1,
+                "menores": 2,
+                "cls": "possível"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f46f752a05e0bcd22c5e60d22dd9e1e8706cc4c7b6e72dc494ac37e84d92d6d3",
+          "bytes": 175,
+          "elapsedMs": 5.264100000000326
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:27.146Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Possível",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 1,
+              "menores": 2,
+              "cls": "possível"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f46f752a05e0bcd22c5e60d22dd9e1e8706cc4c7b6e72dc494ac37e84d92d6d3",
+        "bytes": 175,
+        "elapsedMs": 5.264100000000326
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "possível",
+            "obtained": "possível",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "possível",
+            "obtained": "possível",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Possível",
+            "obtained": "Possível",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "3 menores: possível",
+      "originalInput": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true
+      },
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_vasc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "cls": "possível"
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "possível"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "men_pred": true,
+            "men_febre": true,
+            "men_imuno": true,
+            "pato": false,
+            "maior_micro": false,
+            "maior_img": false,
+            "maior_cir": false,
+            "men_vasc": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:27.457Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Possível",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 0,
+                "menores": 3,
+                "cls": "possível"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e640ff5722fc292ed7e7fc9e68dad1a726c483f597553eaa1010ed90ab7eed93",
+          "bytes": 175,
+          "elapsedMs": 4.2524000000048545
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:27.457Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Possível",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 0,
+              "menores": 3,
+              "cls": "possível"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e640ff5722fc292ed7e7fc9e68dad1a726c483f597553eaa1010ed90ab7eed93",
+        "bytes": 175,
+        "elapsedMs": 4.2524000000048545
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "possível",
+            "obtained": "possível",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "possível",
+            "obtained": "possível",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Possível",
+            "obtained": "Possível",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 6,
+      "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+      "originalInput": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "rej_alt": true
+      },
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "rej_alt": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_vasc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "cls": "rejeitada"
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "rejeitada"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "men_pred": true,
+            "men_febre": true,
+            "men_imuno": true,
+            "rej_alt": true,
+            "pato": false,
+            "maior_micro": false,
+            "maior_img": false,
+            "maior_cir": false,
+            "men_vasc": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:27.771Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Rejeitada",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 0,
+                "menores": 3,
+                "cls": "rejeitada"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "250add614e01293391199df8506e9f3b9669f0beca34dda45f4c906a1f060f69",
+          "bytes": 175,
+          "elapsedMs": 4.292699999998149
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:27.771Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Rejeitada",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 0,
+              "menores": 3,
+              "cls": "rejeitada"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "250add614e01293391199df8506e9f3b9669f0beca34dda45f4c906a1f060f69",
+        "bytes": 175,
+        "elapsedMs": 4.292699999998149
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "rejeitada",
+            "obtained": "rejeitada",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "rejeitada",
+            "obtained": "rejeitada",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Rejeitada",
+            "obtained": "Rejeitada",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-duke",
+      "kind": "native-source-reference",
+      "index": 7,
+      "name": "2 menores: rejeitada",
+      "originalInput": {
+        "men_pred": true,
+        "men_febre": true
+      },
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "amendments": [
+        {
+          "field": "pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "maior_cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_vasc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_imuno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_micro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_img",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "men_exame",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_alt",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_res",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "rej_pato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "cls": "rejeitada"
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 2,
+          "cls": "rejeitada"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "men_pred": true,
+            "men_febre": true,
+            "pato": false,
+            "maior_micro": false,
+            "maior_img": false,
+            "maior_cir": false,
+            "men_vasc": false,
+            "men_imuno": false,
+            "men_micro": false,
+            "men_img": false,
+            "men_exame": false,
+            "rej_alt": false,
+            "rej_res": false,
+            "rej_pato": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+          "startedAt": "2026-10-05T17:36:28.082Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-duke",
+              "main": [
+                "Rejeitada",
+                ""
+              ],
+              "label": "Duke-ISCVID 2023",
+              "raw": {
+                "maiores": 0,
+                "menores": 2,
+                "cls": "rejeitada"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "60856f2c34801e4e72a2f70c64d27a6dd977fbf2e81ccd62c16bbb10b6460a6d",
+          "bytes": 175,
+          "elapsedMs": 5.142699999996694
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/criterios-de-duke/calculate",
+        "startedAt": "2026-10-05T17:36:28.082Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-duke",
+            "main": [
+              "Rejeitada",
+              ""
+            ],
+            "label": "Duke-ISCVID 2023",
+            "raw": {
+              "maiores": 0,
+              "menores": 2,
+              "cls": "rejeitada"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "60856f2c34801e4e72a2f70c64d27a6dd977fbf2e81ccd62c16bbb10b6460a6d",
+        "bytes": 175,
+        "elapsedMs": 5.142699999996694
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cls",
+            "expected": "rejeitada",
+            "obtained": "rejeitada",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.maiores",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.menores",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cls",
+            "expected": "rejeitada",
+            "obtained": "rejeitada",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Rejeitada",
+            "obtained": "Rejeitada",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
