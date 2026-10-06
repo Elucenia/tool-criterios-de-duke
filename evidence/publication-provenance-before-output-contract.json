@@ -1,0 +1,324 @@
+{
+  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
+  "id": "criterios-de-duke",
+  "repository": "Elucenia/tool-criterios-de-duke",
+  "remoteBase": {
+    "id": "criterios-de-duke",
+    "repository": "Elucenia/tool-criterios-de-duke",
+    "branch": "main",
+    "commit": "9e329aa3d16a9d697e0a400042cb91c381f649fb",
+    "archiveSha256": "e9915a14ec0667ae3478246851beb43879c759d6079c7943c96a85aba71be5ab",
+    "protectedFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3301,
+        "sha": "e2c8ba1b5cbfc383012c86442d08d1ba2919b946",
+        "sha256": "ba1c1b9ef3bbef33163a8cd069fe5bcab893b1a40fb6423085edd8666114ac58"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 916,
+        "sha": "a47874d8ee4c220730b4616321df87f7bc421c7c",
+        "sha256": "2ca21bb5fa1cd9c6fd76f7a915f9fd2e2635f7d9e91ce92cfe9a5ae7c549c7cb"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1468,
+        "sha": "03ea2a54d7d01ca64b3a8235c8049f28c8ebc87e",
+        "sha256": "a6271ff1ba90cc8a9c238235612df669791a6ddc1deeacf474be5f528957a3dc"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1634,
+        "sha": "c98367b2768f16c32855a56d984564c838e753e2",
+        "sha256": "c81eabd4fd113a8655e501bd63d335cec73d1d2a5b6b2a6608b8df08851cdc53"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "receipt": {
+      "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+      "bytes": 6066154,
+      "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+    },
+    "remoteCodeExecuted": false,
+    "freshBranchReadRequiredBeforePublication": true
+  },
+  "priorAuthorialStandalone": {
+    "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+    "bytes": 6823260,
+    "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+    "bytes": 7858,
+    "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+  },
+  "browserAdapterIdentical": true,
+  "methodVersion": "Duke-ISCVID 2023: combinações selecionadas da Tabela 1; maior cirúrgico condicionado pela Tabela 2, I.C, à ausência de maior de imagem e de confirmação posterior; sem equivalência automática com Duke 2000",
+  "implementationVersion": "criterios-de-duke@duke2023-surgical-source-2026-10-04+0be5980821b1",
+  "locales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "apps/dashboard/private/localization/pt-BR.json",
+      "bytes": 13601911,
+      "sha256": "347c306e9e588d9bff853ab948f100b2ce00d7adb88efb821e39c2799deb1806"
+    },
+    {
+      "file": "apps/dashboard/private/localization/en.json",
+      "bytes": 13681895,
+      "sha256": "e14119d6179a16e4af0998cb86cd7332e72eccae8a8257000b4ea940a5919f2b"
+    },
+    {
+      "file": "apps/dashboard/private/localization/es.json",
+      "bytes": 13727824,
+      "sha256": "52dce27b11b7d4bd0b0e599e66e24beb802f99068554f76c34ef81c98d7e164f"
+    },
+    {
+      "file": "apps/dashboard/private/localization/fr.json",
+      "bytes": 13775177,
+      "sha256": "e4ffcf4c7a5378bb9527a544548c6d8364aa309ea38f567359f8f198eee6c7c9"
+    },
+    {
+      "file": "apps/dashboard/private/localization/de.json",
+      "bytes": 13749397,
+      "sha256": "c92817a3fa8412a4f878061d3ac1c56be6d114aae1c3232c25f79c6ce7d597f4"
+    },
+    {
+      "file": "apps/dashboard/private/localization/it.json",
+      "bytes": 13726317,
+      "sha256": "5c7c142087de8016a75759669a7271a9048d9544b1a1383c626fafa7be0ece39"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ar.json",
+      "bytes": 13962469,
+      "sha256": "c3a3cf978eeac700c01847f49bc4dd12759499a6973fa36733bc290786f9246d"
+    },
+    {
+      "file": "apps/dashboard/private/localization/zh.json",
+      "bytes": 13590420,
+      "sha256": "eb2c7d8d5b980d6d43e44bcc135bcde31565fab0290bf595f84975dec6fb294e"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ja.json",
+      "bytes": 13729894,
+      "sha256": "eb524f45c7e9ce0fc3e951b159c102294d6702a1858a1f43f7e920c69fa1a290"
+    },
+    {
+      "file": "apps/dashboard/private/localization/hi.json",
+      "bytes": 14418664,
+      "sha256": "fe93d7fc31e91ed8c9d3acee80261a2f8ad74b77c86e6e28f9b4cadf5d9f048f"
+    }
+  ],
+  "referenceBank": {
+    "file": "reports/review-20261003/source-cases-audit.json",
+    "bytes": 885399,
+    "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+  },
+  "comparisonProgram": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "bytes": 20735,
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa"
+  },
+  "sourceNodeParityPassed": true,
+  "browserVmParityPassed": true,
+  "actualBrowserDomVerified": false,
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 70186,
+    "sha256": "e4555c16482ab4ede5c7616fe6c2aecf4679959c993e8303e707139e39af98f7",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/criterios-de-duke/calculator.js",
+      "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c",
+      "bytes": 7858
+    },
+    "cases": 8,
+    "status": "passed"
+  },
+  "rights": {
+    "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
+    "sourceAdapter": {
+      "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
+      "bytes": 7858,
+      "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+    },
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/criterios-de-duke/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/criterios-de-duke/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedRemoteFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3301,
+        "sha": "e2c8ba1b5cbfc383012c86442d08d1ba2919b946",
+        "sha256": "ba1c1b9ef3bbef33163a8cd069fe5bcab893b1a40fb6423085edd8666114ac58"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 916,
+        "sha": "a47874d8ee4c220730b4616321df87f7bc421c7c",
+        "sha256": "2ca21bb5fa1cd9c6fd76f7a915f9fd2e2635f7d9e91ce92cfe9a5ae7c549c7cb"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1468,
+        "sha": "03ea2a54d7d01ca64b3a8235c8049f28c8ebc87e",
+        "sha256": "a6271ff1ba90cc8a9c238235612df669791a6ddc1deeacf474be5f528957a3dc"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1634,
+        "sha": "c98367b2768f16c32855a56d984564c838e753e2",
+        "sha256": "c81eabd4fd113a8655e501bd63d335cec73d1d2a5b6b2a6608b8df08851cdc53"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "sourceMaterialScope": "Published mathematical/Boolean method implemented in ELUCENIA code; source-specific clinical descriptions and questionnaire expression remain separate from code ownership/licensing",
+    "scientificSources": [
+      [
+        "Fowler VG et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria. Clin Infect Dis, 2023.",
+        "https://doi.org/10.1093/cid/ciad271"
+      ],
+      [
+        "Li JS et al. Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis. Clin Infect Dis, 2000.",
+        "https://doi.org/10.1086/313753"
+      ]
+    ],
+    "methodVersion": "Duke-ISCVID 2023: combinações selecionadas da Tabela 1; maior cirúrgico condicionado pela Tabela 2, I.C, à ausência de maior de imagem e de confirmação posterior; sem equivalência automática com Duke 2000",
+    "grantRecordedInNotice": true,
+    "thirdPartyInstrumentRightsApproval": "not-performed",
+    "wholeInstrumentApproval": false,
+    "professionalTranslationApproval": false,
+    "clinicalApproval": false,
+    "remainingScopeReview": "Check source-specific wording, questionnaire/instrument and translation conditions before treating the complete mixed bundle as cleared; no grant is inferred from public accessibility or code licence"
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "externalPublicationReady": false,
+  "publicationPerformed": false,
+  "appWrites": false,
+  "deliveryWrites": false,
+  "preparedFrom": {
+    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
+    "bytes": 2785936,
+    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
+  }
+}

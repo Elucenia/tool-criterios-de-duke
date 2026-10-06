@@ -115,3 +115,91 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Endocardite certaine (critères cliniques)
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 2 |
+| Critères mineurs | 0 |
+
+
+### 2
+
+Endocardite certaine (critères cliniques)
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 1 |
+| Critères mineurs | 3 |
+
+
+### 3
+
+Endocardite certaine (critères cliniques)
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 0 |
+| Critères mineurs | 5 |
+
+
+### 4
+
+Endocardite certaine (critère pathologique)
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 0 |
+| Critères mineurs | 0 |
+
+
+### 5
+
+Endocardite possible
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 1 |
+| Critères mineurs | 2 |
+
+Endocardite possible : répéter les hémocultures avant les antibiotiques lorsque cela est possible et élargir l’imagerie (échocardiographie transœsophagienne, TDM cardiaque ou TEP/TDM).
+
+
+### 6
+
+Endocardite possible
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 0 |
+| Critères mineurs | 3 |
+
+Endocardite possible : répéter les hémocultures avant les antibiotiques lorsque cela est possible et élargir l’imagerie (échocardiographie transœsophagienne, TDM cardiaque ou TEP/TDM).
+
+
+### 7
+
+Endocardite rejetée (critère d’exclusion présent)
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 0 |
+| Critères mineurs | 3 |
+
+
+### 8
+
+Endocardite rejetée (ne remplit pas les critères de possible)
+
+| Détails du résultat | |
+| --- | --- |
+| Critères majeurs | 0 |
+| Critères mineurs | 2 |
+

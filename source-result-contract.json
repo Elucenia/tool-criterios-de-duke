@@ -1,0 +1,648 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "criterios-de-duke",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "0f5fb9ba5f9c91f4e648b074769157d4d39bd084",
+    "oldEngineSha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c",
+    "currentEngineSha256": "4947054b6ae433cbb3480fbc01c4b21ad817e328bd09df1a1d62b13a153eaed9"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Hemoculturas típicas + vegetação ao eco: definida",
+      "input": {
+        "maior_micro": true,
+        "maior_img": true,
+        "pato": false,
+        "maior_cir": false,
+        "men_pred": false,
+        "men_febre": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "cls": "definida"
+        },
+        "level": "high",
+        "main": "Definida"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "high",
+        "verdict": "Endocardite definida (critérios clínicos)",
+        "rows": [
+          [
+            "Critérios maiores",
+            "2"
+          ],
+          [
+            "Critérios menores",
+            "0"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "cls": "definida"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "1 maior + 3 menores: definida",
+      "input": {
+        "maior_micro": true,
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "pato": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 1,
+          "menores": 3,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cls": "definida"
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "high",
+        "verdict": "Endocardite definida (critérios clínicos)",
+        "rows": [
+          [
+            "Critérios maiores",
+            "1"
+          ],
+          [
+            "Critérios menores",
+            "3"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "maiores": 1,
+          "menores": 3,
+          "cls": "definida"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "5 menores: definida",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_vasc": true,
+        "men_imuno": true,
+        "men_micro": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 5,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "menores": 5,
+          "cls": "definida"
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "high",
+        "verdict": "Endocardite definida (critérios clínicos)",
+        "rows": [
+          [
+            "Critérios maiores",
+            "0"
+          ],
+          [
+            "Critérios menores",
+            "5"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "maiores": 0,
+          "menores": 5,
+          "cls": "definida"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Critério patológico isolado: definida",
+      "input": {
+        "pato": true,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_pred": false,
+        "men_febre": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 0,
+          "cls": "definida"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cls": "definida"
+        },
+        "verdict": "patológico"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Definida",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "high",
+        "verdict": "Endocardite definida (critério patológico)",
+        "rows": [
+          [
+            "Critérios maiores",
+            "0"
+          ],
+          [
+            "Critérios menores",
+            "0"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "maiores": 0,
+          "menores": 0,
+          "cls": "definida"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "1 maior + 2 menores: possível",
+      "input": {
+        "maior_img": true,
+        "men_pred": true,
+        "men_febre": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 1,
+          "menores": 2,
+          "cls": "possível"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cls": "possível"
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "mid",
+        "verdict": "Endocardite possível",
+        "rows": [
+          [
+            "Critérios maiores",
+            "1"
+          ],
+          [
+            "Critérios menores",
+            "2"
+          ]
+        ],
+        "note": "Endocardite possível: repita hemoculturas antes de antibiótico quando possível e amplie a imagem (ecocardiograma transesofágico, TC cardíaca ou PET/CT).",
+        "raw": {
+          "maiores": 1,
+          "menores": 2,
+          "cls": "possível"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "3 menores: possível",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "possível"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cls": "possível"
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Possível",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "mid",
+        "verdict": "Endocardite possível",
+        "rows": [
+          [
+            "Critérios maiores",
+            "0"
+          ],
+          [
+            "Critérios menores",
+            "3"
+          ]
+        ],
+        "note": "Endocardite possível: repita hemoculturas antes de antibiótico quando possível e amplie a imagem (ecocardiograma transesofágico, TC cardíaca ou PET/CT).",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "possível"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 6,
+      "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "men_imuno": true,
+        "rej_alt": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "rejeitada"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cls": "rejeitada"
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "low",
+        "verdict": "Endocardite rejeitada (critério de exclusão presente)",
+        "rows": [
+          [
+            "Critérios maiores",
+            "0"
+          ],
+          [
+            "Critérios menores",
+            "3"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "maiores": 0,
+          "menores": 3,
+          "cls": "rejeitada"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 7,
+      "name": "2 menores: rejeitada",
+      "input": {
+        "men_pred": true,
+        "men_febre": true,
+        "pato": false,
+        "maior_micro": false,
+        "maior_img": false,
+        "maior_cir": false,
+        "men_vasc": false,
+        "men_imuno": false,
+        "men_micro": false,
+        "men_img": false,
+        "men_exame": false,
+        "rej_alt": false,
+        "rej_res": false,
+        "rej_pato": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-duke",
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "raw": {
+          "maiores": 0,
+          "menores": 2,
+          "cls": "rejeitada"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cls": "rejeitada"
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Rejeitada",
+          ""
+        ],
+        "label": "Duke-ISCVID 2023",
+        "level": "low",
+        "verdict": "Endocardite rejeitada (não preenche critérios de possível)",
+        "rows": [
+          [
+            "Critérios maiores",
+            "0"
+          ],
+          [
+            "Critérios menores",
+            "2"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "maiores": 0,
+          "menores": 2,
+          "cls": "rejeitada"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

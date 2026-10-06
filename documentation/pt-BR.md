@@ -115,3 +115,91 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Endocardite definida (critérios clínicos)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 2 |
+| Critérios menores | 0 |
+
+
+### 2
+
+Endocardite definida (critérios clínicos)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 1 |
+| Critérios menores | 3 |
+
+
+### 3
+
+Endocardite definida (critérios clínicos)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 0 |
+| Critérios menores | 5 |
+
+
+### 4
+
+Endocardite definida (critério patológico)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 0 |
+| Critérios menores | 0 |
+
+
+### 5
+
+Endocardite possível
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 1 |
+| Critérios menores | 2 |
+
+Endocardite possível: repita hemoculturas antes de antibiótico quando possível e amplie a imagem (ecocardiograma transesofágico, TC cardíaca ou PET/CT).
+
+
+### 6
+
+Endocardite possível
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 0 |
+| Critérios menores | 3 |
+
+Endocardite possível: repita hemoculturas antes de antibiótico quando possível e amplie a imagem (ecocardiograma transesofágico, TC cardíaca ou PET/CT).
+
+
+### 7
+
+Endocardite rejeitada (critério de exclusão presente)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 0 |
+| Critérios menores | 3 |
+
+
+### 8
+
+Endocardite rejeitada (não preenche critérios de possível)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Critérios maiores | 0 |
+| Critérios menores | 2 |
+

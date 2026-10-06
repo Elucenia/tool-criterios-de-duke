@@ -1,0 +1,3679 @@
+{
+  "id": "criterios-de-duke",
+  "implementationVersion": "criterios-de-duke@native-2026-10-05+4947054b6ae4",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definida (critérios clínicos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definida (critérios clínicos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definida (critérios clínicos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definida (critério patológico)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite possível",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Endocardite possível: repita hemoculturas antes de antibiótico quando possível e amplie a imagem (ecocardiograma transesofágico, TC cardíaca ou PET/CT).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite possível",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Endocardite possível: repita hemoculturas antes de antibiótico quando possível e amplie a imagem (ecocardiograma transesofágico, TC cardíaca ou PET/CT).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite rejeitada (critério de exclusão presente)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critérios maiores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critérios menores",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite rejeitada (não preenche critérios de possível)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Definite endocarditis (clinical criteria)",
+            "locale": "en",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Definite endocarditis (clinical criteria)",
+            "locale": "en",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Definite endocarditis (clinical criteria)",
+            "locale": "en",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Definite endocarditis (pathological criterion)",
+            "locale": "en",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Possible endocarditis",
+            "locale": "en",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Possible endocarditis: repeat blood cultures before antibiotics when possible and expand imaging (transesophageal echocardiogram, cardiac CT, or PET/CT).",
+            "locale": "en",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Possible endocarditis",
+            "locale": "en",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Possible endocarditis: repeat blood cultures before antibiotics when possible and expand imaging (transesophageal echocardiogram, cardiac CT, or PET/CT).",
+            "locale": "en",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rejected endocarditis (exclusion criterion present)",
+            "locale": "en",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major criteria",
+                "locale": "en",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Minor criteria",
+                "locale": "en",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rejected endocarditis (does not meet possible criteria)",
+            "locale": "en",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis definitiva (criterios clínicos)",
+            "locale": "es",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis definitiva (criterios clínicos)",
+            "locale": "es",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis definitiva (criterios clínicos)",
+            "locale": "es",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis definitiva (criterio patológico)",
+            "locale": "es",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis posible",
+            "locale": "es",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Endocarditis posible: repetir hemocultivos antes de los antibióticos cuando sea posible y ampliar la imagen (ecocardiograma transesofágico, TC cardíaca o PET/CT).",
+            "locale": "es",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis posible",
+            "locale": "es",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Endocarditis posible: repetir hemocultivos antes de los antibióticos cuando sea posible y ampliar la imagen (ecocardiograma transesofágico, TC cardíaca o PET/CT).",
+            "locale": "es",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis rechazada (criterio de exclusión presente)",
+            "locale": "es",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criterios mayores",
+                "locale": "es",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criterios menores",
+                "locale": "es",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocarditis rechazada (no cumple los criterios de posible)",
+            "locale": "es",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite certaine (critères cliniques)",
+            "locale": "fr",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite certaine (critères cliniques)",
+            "locale": "fr",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite certaine (critères cliniques)",
+            "locale": "fr",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite certaine (critère pathologique)",
+            "locale": "fr",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite possible",
+            "locale": "fr",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Endocardite possible : répéter les hémocultures avant les antibiotiques lorsque cela est possible et élargir l’imagerie (échocardiographie transœsophagienne, TDM cardiaque ou TEP/TDM).",
+            "locale": "fr",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite possible",
+            "locale": "fr",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Endocardite possible : répéter les hémocultures avant les antibiotiques lorsque cela est possible et élargir l’imagerie (échocardiographie transœsophagienne, TDM cardiaque ou TEP/TDM).",
+            "locale": "fr",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite rejetée (critère d’exclusion présent)",
+            "locale": "fr",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Critères majeurs",
+                "locale": "fr",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Critères mineurs",
+                "locale": "fr",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite rejetée (ne remplit pas les critères de possible)",
+            "locale": "fr",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sichere Endokarditis (klinische Kriterien)",
+            "locale": "de",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sichere Endokarditis (klinische Kriterien)",
+            "locale": "de",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sichere Endokarditis (klinische Kriterien)",
+            "locale": "de",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sichere Endokarditis (pathologisches Kriterium)",
+            "locale": "de",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mögliche Endokarditis",
+            "locale": "de",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Mögliche Endokarditis: nach Möglichkeit vor Antibiotika Blutkulturen wiederholen und die Bildgebung erweitern (transösophageale Echokardiographie, kardiales CT oder PET/CT).",
+            "locale": "de",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mögliche Endokarditis",
+            "locale": "de",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Mögliche Endokarditis: nach Möglichkeit vor Antibiotika Blutkulturen wiederholen und die Bildgebung erweitern (transösophageale Echokardiographie, kardiales CT oder PET/CT).",
+            "locale": "de",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endokarditis ausgeschlossen (Ausschlusskriterium vorhanden)",
+            "locale": "de",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hauptkriterien",
+                "locale": "de",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nebenkriterien",
+                "locale": "de",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endokarditis ausgeschlossen (erfüllt die Kriterien für möglich nicht)",
+            "locale": "de",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definita (criteri clinici)",
+            "locale": "it",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definita (criteri clinici)",
+            "locale": "it",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definita (criteri clinici)",
+            "locale": "it",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite definita (criterio patologico)",
+            "locale": "it",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite possibile",
+            "locale": "it",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Endocardite possibile: ripetere le emocolture prima degli antibiotici quando possibile e ampliare l’imaging (ecocardiogramma transesofageo, TC cardiaca o PET/CT).",
+            "locale": "it",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite possibile",
+            "locale": "it",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "Endocardite possibile: ripetere le emocolture prima degli antibiotici quando possibile e ampliare l’imaging (ecocardiogramma transesofageo, TC cardiaca o PET/CT).",
+            "locale": "it",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite esclusa (presente criterio di esclusione)",
+            "locale": "it",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Criteri maggiori",
+                "locale": "it",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Criteri minori",
+                "locale": "it",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Endocardite esclusa (non soddisfa i criteri di possibile)",
+            "locale": "it",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب المؤكّد (المعايير السريرية)",
+            "locale": "ar",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "١",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب المؤكّد (المعايير السريرية)",
+            "locale": "ar",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٥",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب المؤكّد (المعايير السريرية)",
+            "locale": "ar",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب المؤكّد (المعيار المرضي)",
+            "locale": "ar",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "١",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب المحتمل",
+            "locale": "ar",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "التهاب شغاف القلب المحتمل: أعد زرع الدم قبل المضادات الحيوية عندما يكون ذلك ممكنًا ووسّع التصوير (تخطيط صدى القلب عبر المريء، أو التصوير المقطعي للقلب، أو PET/CT).",
+            "locale": "ar",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب المحتمل",
+            "locale": "ar",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "التهاب شغاف القلب المحتمل: أعد زرع الدم قبل المضادات الحيوية عندما يكون ذلك ممكنًا ووسّع التصوير (تخطيط صدى القلب عبر المريء، أو التصوير المقطعي للقلب، أو PET/CT).",
+            "locale": "ar",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب مرفوض (معيار استبعاد موجود)",
+            "locale": "ar",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعايير الرئيسية",
+                "locale": "ar",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المعايير الصغرى",
+                "locale": "ar",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب شغاف القلب مرفوض (لا يستوفي معايير المحتمل)",
+            "locale": "ar",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "确定性心内膜炎（临床标准）",
+            "locale": "zh",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "确定性心内膜炎（临床标准）",
+            "locale": "zh",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "确定性心内膜炎（临床标准）",
+            "locale": "zh",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "确定性心内膜炎（病理标准）",
+            "locale": "zh",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "可能的心内膜炎",
+            "locale": "zh",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "可能性心内膜炎：如可能，在使用抗生素前重复血培养，并扩大影像检查（经食管超声心动图、心脏 CT 或 PET/CT）。",
+            "locale": "zh",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "可能的心内膜炎",
+            "locale": "zh",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "可能性心内膜炎：如可能，在使用抗生素前重复血培养，并扩大影像检查（经食管超声心动图、心脏 CT 或 PET/CT）。",
+            "locale": "zh",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "排除心内膜炎（存在排除标准）",
+            "locale": "zh",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要标准",
+                "locale": "zh",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次要标准",
+                "locale": "zh",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "排除心内膜炎（不符合可能性标准）",
+            "locale": "zh",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "確定心内膜炎（臨床基準）",
+            "locale": "ja",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "確定心内膜炎（臨床基準）",
+            "locale": "ja",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "確定心内膜炎（臨床基準）",
+            "locale": "ja",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "確定心内膜炎（病理学的基準）",
+            "locale": "ja",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "可能性のある感染性心内膜炎",
+            "locale": "ja",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "可能性のある感染性心内膜炎：可能であれば抗菌薬投与前に血液培養を再検し、画像検査を拡大する（経食道心エコー、心臓CT、またはPET/CT）。",
+            "locale": "ja",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "可能性のある感染性心内膜炎",
+            "locale": "ja",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "可能性のある感染性心内膜炎：可能であれば抗菌薬投与前に血液培養を再検し、画像検査を拡大する（経食道心エコー、心臓CT、またはPET/CT）。",
+            "locale": "ja",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "感染性心内膜炎は除外（除外基準あり）",
+            "locale": "ja",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "主要基準",
+                "locale": "ja",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "副基準",
+                "locale": "ja",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "感染性心内膜炎は除外（可能性の基準を満たさない）",
+            "locale": "ja",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Hemoculturas típicas + vegetação ao eco: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निश्चित एंडोकार्डाइटिस (नैदानिक मानदंड)",
+            "locale": "hi",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 3 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निश्चित एंडोकार्डाइटिस (नैदानिक मानदंड)",
+            "locale": "hi",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 menores: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "5",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निश्चित एंडोकार्डाइटिस (नैदानिक मानदंड)",
+            "locale": "hi",
+            "template": "documented-authored-51d7ee50a495aacab85c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Critério patológico isolado: definida",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निश्चित एंडोकार्डाइटिस (पैथोलॉजिकल मानदंड)",
+            "locale": "hi",
+            "template": "documented-authored-b02cdc33673b858d38ff"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "1 maior + 2 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "1",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "संभावित एंडोकार्डाइटिस",
+            "locale": "hi",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "संभावित एंडोकार्डाइटिस: संभव हो तो एंटीबायोटिक से पहले रक्त संवर्धन दोहराएँ और इमेजिंग बढ़ाएँ (ट्रांसईसोफेजियल इकोकार्डियोग्राम, कार्डियक CT, या PET/CT)।",
+            "locale": "hi",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores: possível",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "संभावित एंडोकार्डाइटिस",
+            "locale": "hi",
+            "template": "documented-authored-552b56824f93d697e872"
+          },
+          "note": {
+            "text": "संभावित एंडोकार्डाइटिस: संभव हो तो एंटीबायोटिक से पहले रक्त संवर्धन दोहराएँ और इमेजिंग बढ़ाएँ (ट्रांसईसोफेजियल इकोकार्डियोग्राम, कार्डियक CT, या PET/CT)।",
+            "locale": "hi",
+            "template": "documented-authored-3036cb6e3613be35c2d2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 menores com diagnóstico alternativo firme: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एंडोकार्डाइटिस अस्वीकृत (बहिष्करण मानदंड उपस्थित)",
+            "locale": "hi",
+            "template": "documented-authored-aee2f452e275664f2328"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "2 menores: rejeitada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-fbaeeb1ace0978ac3483"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "लघु मानदंड",
+                "locale": "hi",
+                "template": "documented-authored-09c4efe005a3878c1506"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-90889ada05c768c7c43d",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एंडोकार्डाइटिस अस्वीकृत (संभावित के मानदंडों को पूरा नहीं करता)",
+            "locale": "hi",
+            "template": "documented-authored-06a592bf610a439607ab"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

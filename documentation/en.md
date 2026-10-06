@@ -115,3 +115,91 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Definite endocarditis (clinical criteria)
+
+| Result details | |
+| --- | --- |
+| Major criteria | 2 |
+| Minor criteria | 0 |
+
+
+### 2
+
+Definite endocarditis (clinical criteria)
+
+| Result details | |
+| --- | --- |
+| Major criteria | 1 |
+| Minor criteria | 3 |
+
+
+### 3
+
+Definite endocarditis (clinical criteria)
+
+| Result details | |
+| --- | --- |
+| Major criteria | 0 |
+| Minor criteria | 5 |
+
+
+### 4
+
+Definite endocarditis (pathological criterion)
+
+| Result details | |
+| --- | --- |
+| Major criteria | 0 |
+| Minor criteria | 0 |
+
+
+### 5
+
+Possible endocarditis
+
+| Result details | |
+| --- | --- |
+| Major criteria | 1 |
+| Minor criteria | 2 |
+
+Possible endocarditis: repeat blood cultures before antibiotics when possible and expand imaging (transesophageal echocardiogram, cardiac CT, or PET/CT).
+
+
+### 6
+
+Possible endocarditis
+
+| Result details | |
+| --- | --- |
+| Major criteria | 0 |
+| Minor criteria | 3 |
+
+Possible endocarditis: repeat blood cultures before antibiotics when possible and expand imaging (transesophageal echocardiogram, cardiac CT, or PET/CT).
+
+
+### 7
+
+Rejected endocarditis (exclusion criterion present)
+
+| Result details | |
+| --- | --- |
+| Major criteria | 0 |
+| Minor criteria | 3 |
+
+
+### 8
+
+Rejected endocarditis (does not meet possible criteria)
+
+| Result details | |
+| --- | --- |
+| Major criteria | 0 |
+| Minor criteria | 2 |
+

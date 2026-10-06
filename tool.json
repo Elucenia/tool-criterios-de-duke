@@ -573,7 +573,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Duke-ISCVID 2023: combinações selecionadas da Tabela 1; maior cirúrgico condicionado pela Tabela 2, I.C, à ausência de maior de imagem e de confirmação posterior; sem equivalência automática com Duke 2000",
-    "implementationVersion": "criterios-de-duke@duke2023-surgical-source-2026-10-04+0be5980821b1",
+    "implementationVersion": "criterios-de-duke@native-2026-10-05+4947054b6ae4",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10681650/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -1073,7 +1073,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c",
+      "implementationHash": "4947054b6ae433cbb3480fbc01c4b21ad817e328bd09df1a1d62b13a153eaed9",
       "dukeSurgicalSourceAmendment": {
         "at": "2026-10-04T22:34:36.424Z",
         "source": {
@@ -1262,7 +1262,35 @@
         "previousLimits": "Os critérios Duke-ISCVID 2023 dependem de definições específicas de microbiologia, imagem, inspeção intraoperatória e condições predisponentes. Alguns microrganismos só são classificados como típicos na presença de prótese intracardíaca. A edição 2023 também altera exigências de culturas da edição anterior; contagens isoladas sem essas definições não reproduzem o sistema completo.",
         "previousMethodVersion": "Duke ISCVID 2023:combinações decritérios maior/menor/patológico, rejeição; sem substituição por Duke 2000",
         "previousImplementationVersion": "criterios-de-duke@native-2026-10-03+a17b3c48786a"
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "criterios-de-duke@duke2023-surgical-source-2026-10-04+0be5980821b1",
+          "previousImplementationHash": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c",
+          "implementationHash": "4947054b6ae433cbb3480fbc01c4b21ad817e328bd09df1a1d62b13a153eaed9",
+          "scientificBodySha256": "5323f9ca995ebe253e9b641b8add03f490f31efe86246c2acfd50a1bb206b080",
+          "metadataContractHash": "3299a583ea0023fc5a71aaf0f0789abae66587dda609e0852325a0611e3f4a96",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Os critérios Duke-ISCVID 2023 dependem de definições específicas de microbiologia, imagem, inspeção intraoperatória e condições predisponentes. Alguns microrganismos só são classificados como típicos na presença de prótese intracardíaca. A edição 2023 também altera exigências de culturas da edição anterior; contagens isoladas sem essas definições não reproduzem o sistema completo. A Tabela 2, seção I.C, limita o maior cirúrgico à ausência de maior de imagem e de confirmação histológica ou microbiológica posterior. Nesta interface, selecionar o critério patológico impede a soma adicional do maior cirúrgico; o maior microbiológico do sangue permanece separado. A pessoa que preenche deve verificar a confirmação posterior e as definições da fonte: os campos booleanos não registram toda a cronologia ou a aquisição dos achados. A conferência corrige somente esta contagem e suas combinações selecionadas; não valida diagnóstico, desempenho clínico, tratamento ou o método completo.",
     "sourceLimitEvidence": {
@@ -1363,20 +1391,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/criterios-de-duke/calculator.js",
-    "bytes": 7858,
-    "sha256": "0be5980821b1f7717cc641cb1305d9cdfd1fe99f7ce695949e5c586af6b2922c"
+    "bytes": 8063,
+    "sha256": "4947054b6ae433cbb3480fbc01c4b21ad817e328bd09df1a1d62b13a153eaed9"
   },
-  "sourceToolSha256": "086a84ccb3efdd7d311bfd33cc235a38bb9a43de1abb6892fa7c2d5551980abc",
+  "sourceToolSha256": "89b8bd5f398ffd1725c1318127795c16625bb1fc6d2d0eba0542ec1950c02869",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "013d302af0bc39cd61d9e6abd025d436ad83db19f84b8e28915a4be25f54f18b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "013d302af0bc39cd61d9e6abd025d436ad83db19f84b8e28915a4be25f54f18b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

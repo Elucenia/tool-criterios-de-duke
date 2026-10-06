@@ -115,3 +115,91 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Endocarditis definitiva (criterios clínicos)
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 2 |
+| Criterios menores | 0 |
+
+
+### 2
+
+Endocarditis definitiva (criterios clínicos)
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 1 |
+| Criterios menores | 3 |
+
+
+### 3
+
+Endocarditis definitiva (criterios clínicos)
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 0 |
+| Criterios menores | 5 |
+
+
+### 4
+
+Endocarditis definitiva (criterio patológico)
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 0 |
+| Criterios menores | 0 |
+
+
+### 5
+
+Endocarditis posible
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 1 |
+| Criterios menores | 2 |
+
+Endocarditis posible: repetir hemocultivos antes de los antibióticos cuando sea posible y ampliar la imagen (ecocardiograma transesofágico, TC cardíaca o PET/CT).
+
+
+### 6
+
+Endocarditis posible
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 0 |
+| Criterios menores | 3 |
+
+Endocarditis posible: repetir hemocultivos antes de los antibióticos cuando sea posible y ampliar la imagen (ecocardiograma transesofágico, TC cardíaca o PET/CT).
+
+
+### 7
+
+Endocarditis rechazada (criterio de exclusión presente)
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 0 |
+| Criterios menores | 3 |
+
+
+### 8
+
+Endocarditis rechazada (no cumple los criterios de posible)
+
+| Detalles del resultado | |
+| --- | --- |
+| Criterios mayores | 0 |
+| Criterios menores | 2 |
+
